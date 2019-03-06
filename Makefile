@@ -1,5 +1,5 @@
 CC=gcc
 CFLAGS=-lpng
 
-split: src/split.c
-	$(CC) -o $@ src/split.c $(CFLAGS) -g -ggdb
+split: src/main.c src/utils/split.c
+	$(CC) -o $@ src/main.c src/utils/split.c $(CFLAGS) -g -ggdb

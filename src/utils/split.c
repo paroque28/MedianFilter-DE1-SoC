@@ -3,23 +3,9 @@
  * $ sudo apt-get install libpng-dev
  */
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <png.h>
-#include <string.h>
 
-struct img_props
-{
-  int width, height;
-  png_byte color_type;
-  png_byte bit_depth;
-};
-
-typedef struct {
-  int x, y, width, height;
-} ImgSize;
-
-
+#include "./split.h"
+//#include "../image.h"
 
 struct img_props get_png_props(char *filename) {
   FILE *fp = fopen(filename, "rb");
@@ -39,7 +25,7 @@ struct img_props get_png_props(char *filename) {
   return input_image_props;
 }
 
-png_bytep * read_png_file(char *filename, struct img_props input_image_props) {
+png_bytep * read_png_file(char *filename) {
   png_bytep *row_pointers;
   FILE *fp = fopen(filename, "rb");
 
@@ -54,6 +40,12 @@ png_bytep * read_png_file(char *filename, struct img_props input_image_props) {
   png_init_io(png, fp);
 
   png_read_info(png, info);
+
+  struct img_props input_image_props;
+  input_image_props.width      = png_get_image_width(png, info);
+  input_image_props.height     = png_get_image_height(png, info);
+  input_image_props.color_type = png_get_color_type(png, info);
+  input_image_props.bit_depth  = png_get_bit_depth(png, info);
 
   if(input_image_props.bit_depth == 16)
     png_set_strip_16(png);
@@ -138,8 +130,9 @@ void print_image(ImgSize props, png_bytep *row_pointers) {
   for(int y = 0; y < props.height; y++) {
     png_bytep row = row_pointers[y];
     for(int x = 0; x < props.width; x++) {
-      png_bytep px = &(row[x * 4]);
+      png_byte * px = &(row[x * 4]);
       printf("%4d, %4d = RGBA(%3d, %3d, %3d, %3d)\n", x, y, px[0], px[1], px[2], px[3]);
+
     }
   }
 }
@@ -164,50 +157,4 @@ png_bytep * split_image(png_bytep *in_image_rows, ImgSize out_image_props) {
     }
   }
   return out_image_rows;
-}
-
-int main(int argc, char *argv[]) {
-  if(argc != 3){ // argv[1]: image file , argv[2]: percentage
-    printf("Not enough arguments!!\n");
-    abort();
-  }
-  // Get Image properties
-  float percentage = atof(argv[2])/100.0f;
-  struct img_props input_image_props = get_png_props(argv[1]);
-  ImgSize input_image_size = {0,0,input_image_props.width, input_image_props.height};
-  // Get Matrix from image
-  png_bytep * row_pointers = read_png_file(argv[1], input_image_props);
-  //print_image(input_image_props, row_pointers);
-
-
-
-  //Split Images ratios
-  printf("Spliting image with percentage %f\n", percentage);
-  
-  int width_a  = input_image_props.width*percentage;
-  int width_b  = input_image_props.width-width_a;
-  int height_a = input_image_props.height*percentage;
-  int height_b = input_image_props.height-height_a;
-
-  printf("Width: %d, Height: %d\n",input_image_props.width,input_image_props.height);
-  printf("Width: %d + %d, Height: %d + %d\n",width_a,width_b,height_a,height_b);
-
-  ImgSize image_1_props = {0,0,              width_a,height_a};
-  ImgSize image_2_props = {width_a,0,        width_b,height_a};
-  ImgSize image_3_props = {0,height_a,       width_a,height_b};
-  ImgSize image_4_props = {width_a, height_a,width_b,height_b}; 
-
-  png_bytep * img_1 = split_image(row_pointers, image_1_props);
-  png_bytep * img_2 = split_image(row_pointers, image_2_props);
-  png_bytep * img_3 = split_image(row_pointers, image_3_props);
-  png_bytep * img_4 = split_image(row_pointers, image_4_props);
-
-
-  write_png_file("img_1.png", image_1_props, img_1);
-  write_png_file("img_2.png", image_2_props, img_2);
-  write_png_file("img_3.png", image_3_props, img_3);
-  write_png_file("img_4.png", image_4_props, img_4);
-
-
-  return 0;
 }
