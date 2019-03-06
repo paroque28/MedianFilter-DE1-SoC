@@ -34,22 +34,22 @@ PNGImage Image_to_png (Image image){
     //Reserve memory
     png_bytep * res_rows = (png_bytep*) malloc(sizeof(png_bytep) * props.height);
     for(int y = 0; y < props.height; y++) {
-      res_rows[y] = (png_byte *)malloc(sizeof(png_byte) * props.width);
+      res_rows[y] = (png_byte *)malloc(sizeof(png_byte) * props.width*4);
     }
 
     ImgSize res_size= {0,0,props.width,props.height};
-    Image result = {res_rows, res_size};
+    PNGImage result = {res_rows, res_size};
 
     for(int y = 0; y < props.height; y++) {
     Pixel * row = row_pointers[y];
     png_bytep res_row = res_rows[y];
     for(int x = 0; x < props.width; x++) {
-      res_row[x] = row[x].r;
-      res_row[x+1] = row[x].g;
-      res_row[x+2] = row[x].b;
-      res_row[x+3] = 255;
+      png_bytep px = &(res_row[x*4]);
+      px[0] = row[x].r;
+      px[1] = row[x].g;
+      px[2] = row[x].b;
+      px[3] = 255;
     }
   }
-  PNGImage res = {res_rows,props};
-  return res;
+  return result;
 }
