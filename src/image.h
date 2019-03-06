@@ -5,21 +5,33 @@
 
 
 //For initialization
-struct img_props
+typedef struct 
 {
   int width, height;
   png_byte color_type;
   png_byte bit_depth;
-};
+} png_props;
 
-//For splits
+//For Matrixes
 typedef struct {
   int x, y, width, height;
 } ImgSize;
 
 
 typedef struct {
-  char r, g, b;
+  unsigned char r, g, b;
 } Pixel;
+
+typedef Pixel * Pixelp;
+
+typedef struct {
+  Pixelp * Rows;
+  ImgSize size;
+} Image;
+
+typedef struct {
+  png_bytep * Rows;
+  ImgSize size;
+} PNGImage;
 
 #endif

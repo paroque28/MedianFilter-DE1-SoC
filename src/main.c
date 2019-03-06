@@ -1,5 +1,9 @@
 #include "image.h"
 #include "utils/split.h"
+#include "utils/convert.h"
+#include "utils/print.h"
+#include "utils/io.h"
+
 
 int main(int argc, char *argv[]) {
   if(argc != 3){ // argv[1]: image file , argv[2]: percentage
@@ -10,7 +14,7 @@ int main(int argc, char *argv[]) {
 
   // Get Image properties
   float percentage = atof(argv[2])/100.0f;
-  struct img_props input_image_props = get_png_props(argv[1]);
+  png_props input_image_props = get_png_props(argv[1]);
   ImgSize input_image_size = {0,0,input_image_props.width, input_image_props.height};
   // Get Matrix from image
   png_bytep * row_pointers = read_png_file(argv[1]);
@@ -42,17 +46,28 @@ int main(int argc, char *argv[]) {
   ImgSize image_3_props = {0,height_a,       width_a,height_b};
   ImgSize image_4_props = {width_a, height_a,width_b,height_b}; 
 
-  png_bytep * img_1 = split_image(row_pointers, image_1_props);
-  png_bytep * img_2 = split_image(row_pointers, image_2_props);
-  png_bytep * img_3 = split_image(row_pointers, image_3_props);
-  png_bytep * img_4 = split_image(row_pointers, image_4_props);
+  PNGImage img_1 = split_image(row_pointers, image_1_props);
+  PNGImage img_2 = split_image(row_pointers, image_2_props);
+  PNGImage img_3 = split_image(row_pointers, image_3_props);
+  PNGImage img_4 = split_image(row_pointers, image_4_props);
 
-  print_image(image_1_props, img_1);
+  printf("Original image\n");
+  print_image_png(img_1);
+
+  printf("Matrix Image\n");
+  Image img_one = png_to_Image(img_1);
+  print_image(img_one);
+
+  printf("Revert Image\n");
+  PNGImage img_revert = Image_to_png(img_one);
+  print_image_png(img_revert);
+
+  write_png_file("revert.png", img_revert);
   
-  write_png_file("img_1.png", image_1_props, img_1);
-  write_png_file("img_2.png", image_2_props, img_2);
-  write_png_file("img_3.png", image_3_props, img_3);
-  write_png_file("img_4.png", image_4_props, img_4);
+  write_png_file("img_1.png", img_1);
+  write_png_file("img_2.png", img_2);
+  write_png_file("img_3.png", img_3);
+  write_png_file("img_4.png", img_4);
 
 
   return 0;
