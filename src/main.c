@@ -51,16 +51,16 @@ int main(int argc, char *argv[]) {
   PNGImage img_3 = split_image(row_pointers, image_3_props);
   PNGImage img_4 = split_image(row_pointers, image_4_props);
 
-  printf("Original image\n");
-  print_image_png(img_1);
+  //printf("Original image\n");
+  //print_image_png(img_1);
 
-  printf("Matrix Image\n");
+  //printf("Matrix Image\n");
   Image img_one = png_to_Image(img_1);
-  print_image(img_one);
+  //print_image(img_one);
 
-  printf("Revert Image\n");
+  //printf("Revert Image\n");
   PNGImage img_revert = Image_to_png(img_one);
-  print_image_png(img_revert);
+  //print_image_png(img_revert);
 
   write_png_file("revert.png", img_revert);
   
