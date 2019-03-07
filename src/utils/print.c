@@ -14,7 +14,7 @@ void print_image_png(PNGImage image) {
   }
 }
 
-
+//Example Print
 void print_image(Image image) {
   for(int y = 0; y < image.size.height; y++) {
     Pixelp row = image.Rows[y];
