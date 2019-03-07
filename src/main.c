@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
 
 
 
-
+  print_image(image_matrix);
   //Filter IMAGE code
 
 

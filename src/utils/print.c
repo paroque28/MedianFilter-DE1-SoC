@@ -19,8 +19,8 @@ void print_image(Image image) {
   for(int y = 0; y < image.size.height; y++) {
     Pixelp row = image.Rows[y];
     for(int x = 0; x < image.size.width; x++) {
-      Pixel * px = &row[x];
-      printf("%4d, %4d = RGB(%3d, %3d, %3d)\n", x, y, px->r, px->g, px->g);
+      Pixel  px = row[x];
+      printf("%4d, %4d = RGB(%3d, %3d, %3d)\n", x, y, px.r, px.g, px.g);
     }
   }
 }
