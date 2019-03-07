@@ -5,6 +5,10 @@
 
 // Important
 
+//For Matrixes
+typedef struct {
+  int x, y, width, height;
+} ImgSize;
 
 typedef struct {
   unsigned char r, g, b;
@@ -38,9 +42,5 @@ typedef struct
   png_byte bit_depth;
 } png_props;
 
-//For Matrixes
-typedef struct {
-  int x, y, width, height;
-} ImgSize;
 
 #endif
