@@ -20,7 +20,7 @@ void print_image(Image image) {
     Pixelp row = image.Rows[y];
     for(int x = 0; x < image.size.width; x++) {
       Pixel  px = row[x];
-      printf("X: %4d, Y: %4d = RGB(%3d, %3d, %3d)\n", x, y, px.r, px.g, px.b);
+      printf("X: %4d, Y: %4d = RGB(%3d, %3d, %3d)\n", x, y, px, px, px);
     }
   }
 }

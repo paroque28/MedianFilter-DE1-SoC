@@ -2,6 +2,7 @@
 #define IMAGE_H
 
 #include <png.h>
+#include <stdlib.h>
 
 // Important
 
@@ -10,9 +11,7 @@ typedef struct {
   int x, y, width, height;
 } ImgSize;
 
-typedef struct {
-  unsigned char r, g, b;
-} Pixel;
+typedef unsigned char Pixel;
 
 typedef Pixel * Pixelp;
 
@@ -42,5 +41,10 @@ typedef struct
   png_byte bit_depth;
 } png_props;
 
+void free_image(Image);
+void free_image_png(PNGImage);
+
+unsigned char get_pixel(Image,int x, int y);
+void set_pixel(Image, int x, int y, unsigned char val);
 
 #endif

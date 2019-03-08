@@ -17,11 +17,7 @@ Image png_to_Image (PNGImage image){
     Pixelp res_row = res_rows[y];
     for(int x = 0; x < props.width; x++) {
       png_byte * px = &(row[x * 4]);
-      res_row[x].r = px[0];
-      res_row[x].g = px[1];
-      res_row[x].b = px[2];
-      //printf("* %4d, %4d = RGBA(%3d, %3d, %3d, %3d)\n", x, y, px[0], px[1], px[2], px[3]);
-      //printf("+ %4d, %4d = RGB(%3d, %3d, %3d)\n", x, y, result.Rows[y][x].r, result.Rows[y][x].g, result.Rows[y][x].b);
+      res_row[x] = (px[0] + px[1] + px[2]) / 3;
     }
   }
   return result;
@@ -45,9 +41,9 @@ PNGImage Image_to_png (Image image){
     png_bytep res_row = res_rows[y];
     for(int x = 0; x < props.width; x++) {
       png_bytep px = &(res_row[x*4]);
-      px[0] = row[x].r;
-      px[1] = row[x].g;
-      px[2] = row[x].b;
+      px[0] = row[x];
+      px[1] = row[x];
+      px[2] = row[x];
       px[3] = 255;
     }
   }
