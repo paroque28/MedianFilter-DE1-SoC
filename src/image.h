@@ -3,6 +3,7 @@
 
 #include <png.h>
 #include <stdlib.h>
+#include <string.h>
 
 // Important
 
@@ -46,5 +47,7 @@ void free_image_png(PNGImage);
 
 unsigned char get_pixel(Image,int x, int y);
 void set_pixel(Image, int x, int y, unsigned char val);
+
+Image clone(Image image);
 
 #endif

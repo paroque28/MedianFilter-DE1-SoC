@@ -4,7 +4,6 @@
 #include "utils/print.h"
 #include "utils/io.h"
 
-
 int main(int argc, char *argv[]) {
   if(argc != 3){ // argv[1]: image file , argv[2]: percentage
     printf("Not enough arguments!!\n");
@@ -56,18 +55,28 @@ int main(int argc, char *argv[]) {
 
   //printf("Matrix Image\n");
   Image img_one = png_to_Image(img_1);
+
+  Image img_one_clone = clone(img_one);
+  free_image(img_one);
   //print_image(img_one);
 
   //printf("Revert Image\n");
-  PNGImage img_revert = Image_to_png(img_one);
+  PNGImage img_revert = Image_to_png(img_one_clone);
+  free_image(img_one_clone);
   //print_image_png(img_revert);
 
   write_png_file("revert.png", img_revert);
+  free_image_png(img_revert);
   
   write_png_file("img_1.png", img_1);
   write_png_file("img_2.png", img_2);
   write_png_file("img_3.png", img_3);
   write_png_file("img_4.png", img_4);
+  
+  free_image_png(img_1);
+  free_image_png(img_2);
+  free_image_png(img_3);
+  free_image_png(img_4);
 
 
   return 0;
