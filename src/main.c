@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
 
   // FILTER IMAGE CODE
 
-  void swap(int *xp, int *yp){ 
+  void swap (int *xp, int *yp){ 
     int temp = *xp; 
     *xp = *yp; 
     *yp = temp; 
@@ -62,11 +62,11 @@ int main(int argc, char *argv[]) {
       } 
     }
 
-    printArray(array, size);
+    //printArray(array, size);
 
-    printf("size = %d \n", size);
+    //printf("size = %d \n", size);
     if(size == 9){
-      printf("RESULT NUMBER/S = %d \n",array[4]);
+      printf("RESULT NUMBERS = %d \n",array[4]);
       return array[4];
     }else if(size == 4){
       printf("RESULT NUMBER/S = %d , %d \n",array[1],array[2]);
@@ -83,139 +83,158 @@ int main(int argc, char *argv[]) {
 
   void medianFilter (Image image){
 
-    Image nimage;
-
+    Image cloned_image = clone(image);
+    
+    /*
     for(int j = 0; j < image.size.height ; j++){
-      Pixelp row = image.Rows[j];
-      /*if(j == 0){
-        
-      }else if(j == image.size.height -1){
-        
-      }else{
-        
-      }*/
+      for(int i = 0; i < image.size.width ; i++){
+        set_pixel(cloned_image, i , j , 0);
+      }
+    }*/
+
+
+     
+    for(int j = 0; j < image.size.height ; j++){
+      //Pixelp row = image.Rows[j];
       
       
       for(int i = 0; i < image.size.width ; i++){
-        Pixel px = row[i];
+        //Pixel px = row[i];
         
         if(j == 0 ){
-          Pixelp row_down = image.Rows[j+1];
+          //Pixelp row_down = image.Rows[j+1];
           if( i == 0){
-            Pixel px_right = row[i+1];
-            Pixel px_down = row_down[i];
-            Pixel px_down_right = row_down[i + 1];
-            int array[] = {px.r , px_right.r, px_down.r , px_down_right.r};
+            //Pixel px_right = row[i+1];
+            //Pixel px_down = row_down[i];
+            //Pixel px_down_right = row_down[i + 1];
+
+            int array[] = {image.Rows[j][i], image.Rows[j][i+1] ,image.Rows[j+1][i]  , image.Rows[j+1][i+1] };
             int size = sizeof(array)/sizeof(array[0]);
+            printArray(array,size);
             int res = Bubblesort_Number(array , size);
+
+            set_pixel(cloned_image, i, j, res);
 
             
 
 
           }else if( i == image.size.width -1){
-            Pixel px_left = row[i-1];
-            Pixel px_down = row_down[i];
-            Pixel px_down_left = row_down[i-1];
-            int array[] = {px.r , px_left.r, px_down.r , px_down_left.r};
+            //Pixel px_left = row[i-1];
+            //Pixel px_down = row_down[i];
+            //Pixel px_down_left = row_down[i-1];
+            int array[] = {image.Rows[j][i] ,image.Rows[j][i-1] ,image.Rows[j+1][i]  ,image.Rows[j+1][i-1] };
             int size = sizeof(array)/sizeof(array[0]);
+            printArray(array,size);
             int res =  Bubblesort_Number(array , size);
 
+
+            set_pixel(cloned_image, i, j, res);
 
 
           }else{
-            Pixel px_right = row[i+1];
-            Pixel px_left = row[i-1];
-            Pixel px_down = row_down[i];
-            Pixel px_down_right = row_down[i + 1];
-            Pixel px_down_left = row_down[i + 1];
-            int array[] = {px.r , px_right.r, px_left.r , px_down.r , px_down_right.r , px_down_left.r};
+            //Pixel px_right = row[i+1];
+            //Pixel px_left = row[i-1];
+            //Pixel px_down = row_down[i];
+            //Pixel px_down_right = row_down[i + 1];
+            //Pixel px_down_left = row_down[i + 1];
+            int array[] = {image.Rows[j][i]  ,image.Rows[j][i+1] ,image.Rows[j][i-1]  ,image.Rows[j+1][i]  ,image.Rows[j+1][i+1]  ,image.Rows[j+1][i-1] };
             int size = sizeof(array)/sizeof(array[0]);
+            printArray(array,size);
             int res =  Bubblesort_Number(array , size);
 
+            set_pixel(cloned_image, i, j, res);
             
           }
           
         }else if(j == image.size.height -1){
-          Pixelp row_up = image.Rows[j-1];
+          //Pixelp row_up = image.Rows[j-1];
 
 
           if( i == 0){
-            Pixel px_right = row[i+1];
-            Pixel px_up = row_up[i];
-            Pixel px_up_right = row_up[i + 1];
-            int array[] = {px.r , px_right.r, px_up.r , px_up_right.r};
+            //Pixel px_right = row[i+1];
+            //Pixel px_up = row_up[i];
+            //Pixel px_up_right = row_up[i + 1];
+            int array[] = {image.Rows[j][i]  ,image.Rows[j][i+1] ,image.Rows[j-1][i]  ,image.Rows[j-1][i+1] };
             int size = sizeof(array)/sizeof(array[0]);
+            printArray(array,size);
             int res = Bubblesort_Number(array , size);
 
-            
+            set_pixel(cloned_image, i, j, res);
 
 
           }else if( i == image.size.width -1){
-            Pixel px_left = row[i-1];
-            Pixel px_up = row_up[i];
-            Pixel px_up_left = row_up[i-1];
-            int array[] = {px.r , px_left.r, px_up.r , px_up_left.r};
+            //Pixel px_left = row[i-1];
+            //Pixel px_up = row_up[i];
+            //Pixel px_up_left = row_up[i-1];
+            int array[] = {image.Rows[j][i] ,image.Rows[j][i-1] ,image.Rows[j-1][i]  ,image.Rows[j-1][i-1] };
             int size = sizeof(array)/sizeof(array[0]);
+            printArray(array,size);
             int res =  Bubblesort_Number(array , size);
 
-
+            set_pixel(cloned_image, i, j, res);
 
           }else{
-            Pixel px_right = row[i+1];
-            Pixel px_left = row[i-1];
-            Pixel px_up = row_up[i];
-            Pixel px_up_right = row_up[i + 1];
-            Pixel px_up_left = row_up[i + 1];
-            int array[] = {px.r , px_right.r, px_left.r , px_up.r , px_up_right.r , px_up_left.r};
+            //Pixel px_right = row[i+1];
+            //Pixel px_left = row[i-1];
+            //Pixel px_up = row_up[i];
+            //Pixel px_up_right = row_up[i + 1];
+            //Pixel px_up_left = row_up[i + 1];
+            int array[] = {image.Rows[j][i] ,image.Rows[j][i+1] ,image.Rows[j][i-1] ,image.Rows[j-1][i] ,image.Rows[j-1][i+1] ,image.Rows[j-1][i-1] };
             int size = sizeof(array)/sizeof(array[0]);
+            printArray(array,size);
             int res =  Bubblesort_Number(array , size);
 
+            set_pixel(cloned_image, i, j, res);
             
           }
 
 
         }else{
-          Pixelp row_up = image.Rows[j-1];
-          Pixelp row_down = image.Rows[j+1];
+          //Pixelp row_up = image.Rows[j-1];
+          //Pixelp row_down = image.Rows[j+1];
 
           if(i == 0){
-            Pixel px_right = row[i+1];
-            Pixel px_up = row_up[i];
-            Pixel px_up_right = row_up[i + 1];
-            Pixel px_down = row_down[i];
-            Pixel px_down_right = row_down[i + 1];
-            int array[] = {px.r , px_right.r, px_up.r , px_up_right.r, px_down.r , px_down_right.r};
+            //Pixel px_right = row[i+1];
+            //Pixel px_up = row_up[i];
+            //Pixel px_up_right = row_up[i + 1];
+            //Pixel px_down = row_down[i];
+            //Pixel px_down_right = row_down[i + 1];
+            int array[] = {image.Rows[j][i] ,image.Rows[j][i+1] ,image.Rows[j-1][i] ,image.Rows[j-1][i+1] ,image.Rows[j+1][i] ,image.Rows[j+1][i+1]};
             int size = sizeof(array)/sizeof(array[0]);
+            printArray(array,size);
             int res = Bubblesort_Number(array , size);
 
-
+            set_pixel(cloned_image, i, j, res);
 
 
           }else if(i == image.size.width - 1){
-            Pixel px_left = row[i-1];
-            Pixel px_up = row_up[i];
-            Pixel px_up_left = row_up[i-1];
-            Pixel px_down = row_down[i];
-            Pixel px_down_left = row_down[i-1];
-            int array[] = {px.r , px_left.r, px_up.r , px_up_left.r , px_down.r , px_down_left.r};
+            //Pixel px_left = row[i-1];
+            //Pixel px_up = row_up[i];
+            //Pixel px_up_left = row_up[i-1];
+            //Pixel px_down = row_down[i];
+            //Pixel px_down_left = row_down[i-1];
+            int array[] = {image.Rows[j][i]  ,image.Rows[j][i-1] ,image.Rows[j-1][i] , image.Rows[j-1][i-1] , image.Rows[j+1][i]  ,image.Rows[j+1][i-1] };
             int size = sizeof(array)/sizeof(array[0]);
+            printArray(array,size);
             int res = Bubblesort_Number(array , size);
 
-
+            set_pixel(cloned_image, i, j, res);
 
           }else{
-            Pixel px_right = row[i+1];
-            Pixel px_left = row[i-1];
-            Pixel px_up = row_up[i];
-            Pixel px_up_left = row_up[i-1];
-            Pixel px_up_right = row_up[i+1];
-            Pixel px_down = row_down[i];
-            Pixel px_down_left = row_down[i-1];
-            Pixel px_down_right = row_down[i+1];
-            int array[] = {px.r , px_right.r, px_left.r , px_up.r, px_up_right.r , px_up_left.r , px_down.r , px_down_right.r , px_down_left.r};
+            //Pixel px_right = row[i+1];
+            //Pixel px_left = row[i-1];
+            //Pixel px_up = row_up[i];
+            //Pixel px_up_left = row_up[i-1];
+            //Pixel px_up_right = row_up[i+1];
+            //Pixel px_down = row_down[i];
+            //Pixel px_down_left = row_down[i-1];
+            //Pixel px_down_right = row_down[i+1];
+            int array[] = {image.Rows[j][i]  ,image.Rows[j][i+1]  ,image.Rows[j][i-1]  , image.Rows[j-1][i],image.Rows[j-1][i+1]  ,image.Rows[j-1][i-1]  , image.Rows[j+1][i]  ,image.Rows[j+1][i+1]  ,image.Rows[j+1][i-1] };
             int size = sizeof(array)/sizeof(array[0]);
+            printArray(array,size);
             int res = Bubblesort_Number(array , size);
 
+            set_pixel(cloned_image, i, j, res);
 
             
           }
@@ -227,26 +246,32 @@ int main(int argc, char *argv[]) {
 
     }
 
+
+    png_image = Image_to_png(cloned_image);
+
+
+    write_png_file("cloned_filter.png", png_image);
+
+
   }
 
-  //medianFilter(image_matrix);
+  medianFilter(image_matrix);
 
-  int array[] = {90 , 40 , 45 , 60};
-  int size = sizeof(array)/sizeof(array[0]);
+  //int array[] = {90 , 40 , 45 , 60};
+  //int size = sizeof(array)/sizeof(array[0]);
 
-  int a = Bubblesort_Number(array, size);
+  //int a = Bubblesort_Number(array, size);
 
-  printf("%d\n", a);
+  //printf("%d\n", a);
 
-
-
-
-
-  free(image_matrix.Rows);
-  png_image = Image_to_png(image_matrix);
+  
 
 
-  write_png_file("result.png", png_image);
+  //free(image_matrix.Rows);
+  //png_image = Image_to_png(cloned_image);
+
+
+  //write_png_file("result.png", png_image);
 
   return 0;
 }
