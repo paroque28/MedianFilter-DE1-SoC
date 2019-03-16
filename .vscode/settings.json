@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "png.h": "c",
-        "split.h": "c",
-        "io.h": "c",
-        "string.h": "c"
-    }
-}
