@@ -29,6 +29,22 @@
    {
       datum baseAddress
       {
+         value = "134221840";
+         type = "String";
+      }
+   }
+   element leds
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+   element leds.s1
+   {
+      datum baseAddress
+      {
          value = "134221824";
          type = "String";
       }
@@ -85,7 +101,7 @@
    {
       datum baseAddress
       {
-         value = "134221832";
+         value = "134221848";
          type = "String";
       }
    }
@@ -111,6 +127,11 @@
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk.clk_in" type="clock" dir="end" />
+ <interface
+   name="leds"
+   internal="leds.external_connection"
+   type="conduit"
+   dir="end" />
  <interface name="pll_off_sdram" internal="pll.outclk2" type="clock" dir="start" />
  <interface name="reset" internal="clk.clk_in_reset" type="reset" dir="end" />
  <interface
@@ -143,6 +164,20 @@
   <parameter name="writeBufferDepth" value="64" />
   <parameter name="writeIRQThreshold" value="8" />
  </module>
+ <module name="leds" kind="altera_avalon_pio" version="18.0" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="8" />
+ </module>
  <module name="nios2" kind="altera_nios2_gen2" version="18.0" enabled="1">
   <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="6" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="6" />
@@ -163,7 +198,7 @@
   <parameter name="dataAddrWidth" value="28" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram_controller.s1' start='0x4000000' end='0x8000000' type='altera_avalon_new_sdram_controller.s1' /><slave name='nios2.debug_mem_slave' start='0x8000800' end='0x8001000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='jtag_uart.avalon_jtag_slave' start='0x8001000' end='0x8001008' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='sysid.control_slave' start='0x8001008' end='0x8001010' type='altera_avalon_sysid_qsys.control_slave' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram_controller.s1' start='0x4000000' end='0x8000000' type='altera_avalon_new_sdram_controller.s1' /><slave name='nios2.debug_mem_slave' start='0x8000800' end='0x8001000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='leds.s1' start='0x8001000' end='0x8001010' type='altera_avalon_pio.s1' /><slave name='jtag_uart.avalon_jtag_slave' start='0x8001010' end='0x8001018' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='sysid.control_slave' start='0x8001018' end='0x8001020' type='altera_avalon_sysid_qsys.control_slave' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -566,7 +601,7 @@
    start="nios2.data_master"
    end="jtag_uart.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x08001000" />
+  <parameter name="baseAddress" value="0x08001010" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -575,7 +610,7 @@
    start="nios2.data_master"
    end="sysid.control_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x08001008" />
+  <parameter name="baseAddress" value="0x08001018" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -594,6 +629,11 @@
    end="sdram_controller.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x04000000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection kind="avalon" version="18.0" start="nios2.data_master" end="leds.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08001000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -617,6 +657,7 @@
  <connection kind="clock" version="18.0" start="clk.clk" end="pll.refclk" />
  <connection kind="clock" version="18.0" start="pll.outclk0" end="sysid.clk" />
  <connection kind="clock" version="18.0" start="pll.outclk0" end="jtag_uart.clk" />
+ <connection kind="clock" version="18.0" start="pll.outclk0" end="leds.clk" />
  <connection
    kind="clock"
    version="18.0"
@@ -639,6 +680,7 @@
    version="18.0"
    start="clk.clk_reset"
    end="jtag_uart.reset" />
+ <connection kind="reset" version="18.0" start="clk.clk_reset" end="leds.reset" />
  <connection
    kind="reset"
    version="18.0"

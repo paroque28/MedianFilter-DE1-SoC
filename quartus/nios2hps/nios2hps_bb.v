@@ -11,7 +11,8 @@ module nios2hps (
 	sdram_controller_wire_dq,
 	sdram_controller_wire_dqm,
 	sdram_controller_wire_ras_n,
-	sdram_controller_wire_we_n);	
+	sdram_controller_wire_we_n,
+	leds_export);	
 
 	input		clk_clk;
 	input		reset_reset_n;
@@ -25,4 +26,5 @@ module nios2hps (
 	output	[1:0]	sdram_controller_wire_dqm;
 	output		sdram_controller_wire_ras_n;
 	output		sdram_controller_wire_we_n;
+	output	[7:0]	leds_export;
 endmodule

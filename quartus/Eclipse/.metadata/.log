@@ -1,0 +1,19 @@
+!SESSION 2019-03-16 16:51:42.777 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-03-16 16:56:04.212
+!MESSAGE Indexed 'MedianFilter_bsp' (80 sources, 62 headers) in 1.88 sec: 1,196 declarations; 2,511 references; 110 unresolved inclusions; 6 syntax errors; 191 unresolved names (4.9%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-03-16 16:56:08.558
+!MESSAGE Indexed 'MedianFilter' (1 sources, 0 headers) in 0.01 sec: 1 declarations; 1 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-16 16:57:34.500
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x8001018]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-16 16:57:36.230
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x8001018 /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus/software/MedianFilter/MedianFilter.elf]
