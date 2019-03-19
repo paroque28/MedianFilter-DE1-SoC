@@ -172,3 +172,16 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY com.altera.sbtgui.launch 1 0 2019-03-19 15:13:17.379
 !MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x4001000 --id=0x0 --timestamp=1553025219 /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus/software/MedianFilter/MedianFilter.elf]
+!SESSION 2019-03-19 15:39:13.269 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-19 15:42:18.894
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --sidp=0x8002800 --id=0x0 --timestamp=1553030469]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-19 15:42:21.252
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x8002800 --id=0x0 --timestamp=1553030469 /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus/software/MedianFilter/MedianFilter.elf]

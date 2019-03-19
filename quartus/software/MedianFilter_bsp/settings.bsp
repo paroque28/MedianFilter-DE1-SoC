@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Mar 19, 2019 2:49:22 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1553028562888</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Mar 19, 2019 3:40:35 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1553031635155</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\quartus\software\MedianFilter_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\nios2hps.sopcinfo</SopcDesignFile>
@@ -900,19 +900,25 @@
         </Setting>
         <MemoryMap>
                 <slaveDescriptor>sdram_controller</slaveDescriptor>
-                <addressRange>0x00000000 - 0x03FFFFFF</addressRange>
+                <addressRange>0x04000000 - 0x07FFFFFF</addressRange>
                 <addressSpan>67108864</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>onchip_memory</slaveDescriptor>
+                <addressRange>0x08000000 - 0x08001869</addressRange>
+                <addressSpan>6250</addressSpan>
+                <attributes>memory</attributes>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>sysid</slaveDescriptor>
-                <addressRange>0x04001000 - 0x04001007</addressRange>
+                <addressRange>0x08002800 - 0x08002807</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x04001008 - 0x0400100F</addressRange>
+                <addressRange>0x08002808 - 0x0800280F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios2hps'
  * SOPC Builder design path: ../../nios2hps.sopcinfo
  *
- * Generated: Tue Mar 19 14:49:25 CST 2019
+ * Generated: Tue Mar 19 15:40:35 CST 2019
  */
 
 /*
@@ -50,12 +50,14 @@
 
 MEMORY
 {
-    reset : ORIGIN = 0x0, LENGTH = 32
-    sdram_controller : ORIGIN = 0x20, LENGTH = 67108832
+    reset : ORIGIN = 0x4000000, LENGTH = 32
+    sdram_controller : ORIGIN = 0x4000020, LENGTH = 67108832
+    onchip_memory : ORIGIN = 0x8000000, LENGTH = 6250
 }
 
 /* Define symbols for each memory base-address */
-__alt_mem_sdram_controller = 0x0;
+__alt_mem_sdram_controller = 0x4000000;
+__alt_mem_onchip_memory = 0x8000000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -321,6 +323,23 @@ SECTIONS
     PROVIDE (_alt_partition_sdram_controller_load_addr = LOADADDR(.sdram_controller));
 
     /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .onchip_memory : AT ( LOADADDR (.sdram_controller) + SIZEOF (.sdram_controller) )
+    {
+        PROVIDE (_alt_partition_onchip_memory_start = ABSOLUTE(.));
+        *(.onchip_memory .onchip_memory. onchip_memory.*)
+        . = ALIGN(4);
+        PROVIDE (_alt_partition_onchip_memory_end = ABSOLUTE(.));
+    } > onchip_memory
+
+    PROVIDE (_alt_partition_onchip_memory_load_addr = LOADADDR(.onchip_memory));
+
+    /*
      * Stabs debugging sections.
      *
      */
@@ -367,7 +386,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x4000000;
+__alt_data_end = 0x8000000;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -383,4 +402,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x4000000 );
+PROVIDE( __alt_heap_limit    = 0x8000000 );
