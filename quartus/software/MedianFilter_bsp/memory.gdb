@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2' in SOPC Builder design 'nios2hps'
 # SOPC Builder design path: ../../nios2hps.sopcinfo
 #
-# Generated: Sat Mar 16 16:56:01 CST 2019
+# Generated: Tue Mar 19 15:40:35 CST 2019
 
 # DO NOT MODIFY THIS FILE
 #
@@ -48,3 +48,6 @@
 
 # sdram_controller
 memory 0x4000000 0x8000000 cache
+
+# onchip_memory
+memory 0x8000000 0x800186a cache

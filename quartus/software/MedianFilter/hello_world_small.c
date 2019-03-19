@@ -79,13 +79,17 @@
  */
 
 #include "sys/alt_stdio.h"
-
+volatile char * sd = (char *) 0x2000;
 int main()
 { 
   alt_putstr("Hello from Nios II!\n");
 
   /* Event loop never exits. */
-  while (1);
+  while (1){
+	  alt_putstr("0x2000:");
+	  alt_putstr(*sd);
+	  alt_putstr(".\n");
+  }
 
   return 0;
 }

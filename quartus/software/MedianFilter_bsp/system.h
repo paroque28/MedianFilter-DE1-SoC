@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios2hps'
  * SOPC Builder design path: ../../nios2hps.sopcinfo
  *
- * Generated: Sat Mar 16 16:56:01 CST 2019
+ * Generated: Tue Mar 19 15:40:36 CST 2019
  */
 
 /*
@@ -62,7 +62,7 @@
 
 #define ALT_CPU_ARCHITECTURE "altera_nios2_gen2"
 #define ALT_CPU_BIG_ENDIAN 0
-#define ALT_CPU_BREAK_ADDR 0x08000820
+#define ALT_CPU_BREAK_ADDR 0x08002020
 #define ALT_CPU_CPU_ARCH_NIOS2_R1
 #define ALT_CPU_CPU_FREQ 100000000u
 #define ALT_CPU_CPU_ID_SIZE 1
@@ -99,7 +99,7 @@
  */
 
 #define NIOS2_BIG_ENDIAN 0
-#define NIOS2_BREAK_ADDR 0x08000820
+#define NIOS2_BREAK_ADDR 0x08002020
 #define NIOS2_CPU_ARCH_NIOS2_R1
 #define NIOS2_CPU_FREQ 100000000u
 #define NIOS2_CPU_ID_SIZE 1
@@ -135,7 +135,7 @@
 
 #define __ALTERA_AVALON_JTAG_UART
 #define __ALTERA_AVALON_NEW_SDRAM_CONTROLLER
-#define __ALTERA_AVALON_PIO
+#define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_AVALON_SYSID_QSYS
 #define __ALTERA_NIOS2_GEN2
 
@@ -156,19 +156,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart"
-#define ALT_STDERR_BASE 0x8001010
+#define ALT_STDERR_BASE 0x8002808
 #define ALT_STDERR_DEV jtag_uart
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart"
-#define ALT_STDIN_BASE 0x8001010
+#define ALT_STDIN_BASE 0x8002808
 #define ALT_STDIN_DEV jtag_uart
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart"
-#define ALT_STDOUT_BASE 0x8001010
+#define ALT_STDOUT_BASE 0x8002808
 #define ALT_STDOUT_DEV jtag_uart
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -193,7 +193,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart altera_avalon_jtag_uart
-#define JTAG_UART_BASE 0x8001010
+#define JTAG_UART_BASE 0x8002808
 #define JTAG_UART_IRQ 0
 #define JTAG_UART_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_NAME "/dev/jtag_uart"
@@ -206,30 +206,32 @@
 
 
 /*
- * leds configuration
+ * onchip_memory configuration
  *
  */
 
-#define ALT_MODULE_CLASS_leds altera_avalon_pio
-#define LEDS_BASE 0x8001000
-#define LEDS_BIT_CLEARING_EDGE_REGISTER 0
-#define LEDS_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define LEDS_CAPTURE 0
-#define LEDS_DATA_WIDTH 8
-#define LEDS_DO_TEST_BENCH_WIRING 0
-#define LEDS_DRIVEN_SIM_VALUE 0
-#define LEDS_EDGE_TYPE "NONE"
-#define LEDS_FREQ 50000000
-#define LEDS_HAS_IN 0
-#define LEDS_HAS_OUT 1
-#define LEDS_HAS_TRI 0
-#define LEDS_IRQ -1
-#define LEDS_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define LEDS_IRQ_TYPE "NONE"
-#define LEDS_NAME "/dev/leds"
-#define LEDS_RESET_VALUE 0
-#define LEDS_SPAN 16
-#define LEDS_TYPE "altera_avalon_pio"
+#define ALT_MODULE_CLASS_onchip_memory altera_avalon_onchip_memory2
+#define ONCHIP_MEMORY_ALLOW_IN_SYSTEM_MEMORY_CONTENT_EDITOR 0
+#define ONCHIP_MEMORY_ALLOW_MRAM_SIM_CONTENTS_ONLY_FILE 0
+#define ONCHIP_MEMORY_BASE 0x8000000
+#define ONCHIP_MEMORY_CONTENTS_INFO ""
+#define ONCHIP_MEMORY_DUAL_PORT 0
+#define ONCHIP_MEMORY_GUI_RAM_BLOCK_TYPE "AUTO"
+#define ONCHIP_MEMORY_INIT_CONTENTS_FILE "nios2hps_onchip_memory"
+#define ONCHIP_MEMORY_INIT_MEM_CONTENT 1
+#define ONCHIP_MEMORY_INSTANCE_ID "NONE"
+#define ONCHIP_MEMORY_IRQ -1
+#define ONCHIP_MEMORY_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define ONCHIP_MEMORY_NAME "/dev/onchip_memory"
+#define ONCHIP_MEMORY_NON_DEFAULT_INIT_FILE_ENABLED 0
+#define ONCHIP_MEMORY_RAM_BLOCK_TYPE "AUTO"
+#define ONCHIP_MEMORY_READ_DURING_WRITE_MODE "DONT_CARE"
+#define ONCHIP_MEMORY_SINGLE_CLOCK_OP 0
+#define ONCHIP_MEMORY_SIZE_MULTIPLE 1
+#define ONCHIP_MEMORY_SIZE_VALUE 6250
+#define ONCHIP_MEMORY_SPAN 6250
+#define ONCHIP_MEMORY_TYPE "altera_avalon_onchip_memory2"
+#define ONCHIP_MEMORY_WRITABLE 1
 
 
 /*
@@ -277,13 +279,13 @@
  */
 
 #define ALT_MODULE_CLASS_sysid altera_avalon_sysid_qsys
-#define SYSID_BASE 0x8001018
+#define SYSID_BASE 0x8002800
 #define SYSID_ID 0
 #define SYSID_IRQ -1
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1552775461
+#define SYSID_TIMESTAMP 1553030469
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */

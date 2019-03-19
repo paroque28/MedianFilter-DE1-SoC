@@ -1,18 +1,6 @@
 
 module nios2hps (
 	clk_clk,
-	leds_export,
-	pll_off_sdram_clk,
-	reset_reset_n,
-	sdram_controller_wire_addr,
-	sdram_controller_wire_ba,
-	sdram_controller_wire_cas_n,
-	sdram_controller_wire_cke,
-	sdram_controller_wire_cs_n,
-	sdram_controller_wire_dq,
-	sdram_controller_wire_dqm,
-	sdram_controller_wire_ras_n,
-	sdram_controller_wire_we_n,
 	hps_ddr_mem_a,
 	hps_ddr_mem_ba,
 	hps_ddr_mem_ck,
@@ -72,21 +60,26 @@ module nios2hps (
 	hps_io_hps_io_spim1_inst_MISO,
 	hps_io_hps_io_spim1_inst_SS0,
 	hps_io_hps_io_uart0_inst_RX,
-	hps_io_hps_io_uart0_inst_TX);	
+	hps_io_hps_io_uart0_inst_TX,
+	hps_io_hps_io_gpio_inst_GPIO09,
+	hps_io_hps_io_gpio_inst_GPIO35,
+	hps_io_hps_io_gpio_inst_GPIO40,
+	hps_io_hps_io_gpio_inst_GPIO53,
+	hps_io_hps_io_gpio_inst_GPIO61,
+	leds_export,
+	pll_off_sdram_clk,
+	reset_reset_n,
+	sdram_controller_wire_addr,
+	sdram_controller_wire_ba,
+	sdram_controller_wire_cas_n,
+	sdram_controller_wire_cke,
+	sdram_controller_wire_cs_n,
+	sdram_controller_wire_dq,
+	sdram_controller_wire_dqm,
+	sdram_controller_wire_ras_n,
+	sdram_controller_wire_we_n);	
 
 	input		clk_clk;
-	output	[7:0]	leds_export;
-	output		pll_off_sdram_clk;
-	input		reset_reset_n;
-	output	[12:0]	sdram_controller_wire_addr;
-	output	[1:0]	sdram_controller_wire_ba;
-	output		sdram_controller_wire_cas_n;
-	output		sdram_controller_wire_cke;
-	output		sdram_controller_wire_cs_n;
-	inout	[15:0]	sdram_controller_wire_dq;
-	output	[1:0]	sdram_controller_wire_dqm;
-	output		sdram_controller_wire_ras_n;
-	output		sdram_controller_wire_we_n;
 	output	[14:0]	hps_ddr_mem_a;
 	output	[2:0]	hps_ddr_mem_ba;
 	output		hps_ddr_mem_ck;
@@ -147,4 +140,21 @@ module nios2hps (
 	output		hps_io_hps_io_spim1_inst_SS0;
 	input		hps_io_hps_io_uart0_inst_RX;
 	output		hps_io_hps_io_uart0_inst_TX;
+	inout		hps_io_hps_io_gpio_inst_GPIO09;
+	inout		hps_io_hps_io_gpio_inst_GPIO35;
+	inout		hps_io_hps_io_gpio_inst_GPIO40;
+	inout		hps_io_hps_io_gpio_inst_GPIO53;
+	inout		hps_io_hps_io_gpio_inst_GPIO61;
+	output	[7:0]	leds_export;
+	output		pll_off_sdram_clk;
+	input		reset_reset_n;
+	output	[12:0]	sdram_controller_wire_addr;
+	output	[1:0]	sdram_controller_wire_ba;
+	output		sdram_controller_wire_cas_n;
+	output		sdram_controller_wire_cke;
+	output		sdram_controller_wire_cs_n;
+	inout	[15:0]	sdram_controller_wire_dq;
+	output	[1:0]	sdram_controller_wire_dqm;
+	output		sdram_controller_wire_ras_n;
+	output		sdram_controller_wire_we_n;
 endmodule
