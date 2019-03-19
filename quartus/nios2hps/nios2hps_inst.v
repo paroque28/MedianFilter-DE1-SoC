@@ -1,17 +1,5 @@
 	nios2hps u0 (
 		.clk_clk                         (<connected-to-clk_clk>),                         //                   clk.clk
-		.leds_export                     (<connected-to-leds_export>),                     //                  leds.export
-		.pll_off_sdram_clk               (<connected-to-pll_off_sdram_clk>),               //         pll_off_sdram.clk
-		.reset_reset_n                   (<connected-to-reset_reset_n>),                   //                 reset.reset_n
-		.sdram_controller_wire_addr      (<connected-to-sdram_controller_wire_addr>),      // sdram_controller_wire.addr
-		.sdram_controller_wire_ba        (<connected-to-sdram_controller_wire_ba>),        //                      .ba
-		.sdram_controller_wire_cas_n     (<connected-to-sdram_controller_wire_cas_n>),     //                      .cas_n
-		.sdram_controller_wire_cke       (<connected-to-sdram_controller_wire_cke>),       //                      .cke
-		.sdram_controller_wire_cs_n      (<connected-to-sdram_controller_wire_cs_n>),      //                      .cs_n
-		.sdram_controller_wire_dq        (<connected-to-sdram_controller_wire_dq>),        //                      .dq
-		.sdram_controller_wire_dqm       (<connected-to-sdram_controller_wire_dqm>),       //                      .dqm
-		.sdram_controller_wire_ras_n     (<connected-to-sdram_controller_wire_ras_n>),     //                      .ras_n
-		.sdram_controller_wire_we_n      (<connected-to-sdram_controller_wire_we_n>),      //                      .we_n
 		.hps_ddr_mem_a                   (<connected-to-hps_ddr_mem_a>),                   //               hps_ddr.mem_a
 		.hps_ddr_mem_ba                  (<connected-to-hps_ddr_mem_ba>),                  //                      .mem_ba
 		.hps_ddr_mem_ck                  (<connected-to-hps_ddr_mem_ck>),                  //                      .mem_ck
@@ -71,6 +59,23 @@
 		.hps_io_hps_io_spim1_inst_MISO   (<connected-to-hps_io_hps_io_spim1_inst_MISO>),   //                      .hps_io_spim1_inst_MISO
 		.hps_io_hps_io_spim1_inst_SS0    (<connected-to-hps_io_hps_io_spim1_inst_SS0>),    //                      .hps_io_spim1_inst_SS0
 		.hps_io_hps_io_uart0_inst_RX     (<connected-to-hps_io_hps_io_uart0_inst_RX>),     //                      .hps_io_uart0_inst_RX
-		.hps_io_hps_io_uart0_inst_TX     (<connected-to-hps_io_hps_io_uart0_inst_TX>)      //                      .hps_io_uart0_inst_TX
+		.hps_io_hps_io_uart0_inst_TX     (<connected-to-hps_io_hps_io_uart0_inst_TX>),     //                      .hps_io_uart0_inst_TX
+		.hps_io_hps_io_gpio_inst_GPIO09  (<connected-to-hps_io_hps_io_gpio_inst_GPIO09>),  //                      .hps_io_gpio_inst_GPIO09
+		.hps_io_hps_io_gpio_inst_GPIO35  (<connected-to-hps_io_hps_io_gpio_inst_GPIO35>),  //                      .hps_io_gpio_inst_GPIO35
+		.hps_io_hps_io_gpio_inst_GPIO40  (<connected-to-hps_io_hps_io_gpio_inst_GPIO40>),  //                      .hps_io_gpio_inst_GPIO40
+		.hps_io_hps_io_gpio_inst_GPIO53  (<connected-to-hps_io_hps_io_gpio_inst_GPIO53>),  //                      .hps_io_gpio_inst_GPIO53
+		.hps_io_hps_io_gpio_inst_GPIO61  (<connected-to-hps_io_hps_io_gpio_inst_GPIO61>),  //                      .hps_io_gpio_inst_GPIO61
+		.leds_export                     (<connected-to-leds_export>),                     //                  leds.export
+		.pll_off_sdram_clk               (<connected-to-pll_off_sdram_clk>),               //         pll_off_sdram.clk
+		.reset_reset_n                   (<connected-to-reset_reset_n>),                   //                 reset.reset_n
+		.sdram_controller_wire_addr      (<connected-to-sdram_controller_wire_addr>),      // sdram_controller_wire.addr
+		.sdram_controller_wire_ba        (<connected-to-sdram_controller_wire_ba>),        //                      .ba
+		.sdram_controller_wire_cas_n     (<connected-to-sdram_controller_wire_cas_n>),     //                      .cas_n
+		.sdram_controller_wire_cke       (<connected-to-sdram_controller_wire_cke>),       //                      .cke
+		.sdram_controller_wire_cs_n      (<connected-to-sdram_controller_wire_cs_n>),      //                      .cs_n
+		.sdram_controller_wire_dq        (<connected-to-sdram_controller_wire_dq>),        //                      .dq
+		.sdram_controller_wire_dqm       (<connected-to-sdram_controller_wire_dqm>),       //                      .dqm
+		.sdram_controller_wire_ras_n     (<connected-to-sdram_controller_wire_ras_n>),     //                      .ras_n
+		.sdram_controller_wire_we_n      (<connected-to-sdram_controller_wire_we_n>)       //                      .we_n
 	);
 

@@ -1,9 +1,26 @@
-16:57:32 **** Incremental Build of configuration Nios II for project MedianFilter ****
+15:13:10 **** Incremental Build of configuration Nios II for project MedianFilter ****
 make all 
 Info: Building ../MedianFilter_bsp/
 C:/quartus/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MedianFilter_bsp/
 [BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../MedianFilter_bsp//HAL/inc -I../MedianFilter_bsp/ -I../MedianFilter_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:90:15: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+    alt_putstr(*sd);
+               ^
+In file included from hello_world_small.c:81:0:
+../MedianFilter_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'char'
+ int alt_putstr(const char* str);
+     ^
+Info: Linking MedianFilter.elf
+nios2-elf-g++  -T'../MedianFilter_bsp//linker.x' -msys-crt0='../MedianFilter_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../MedianFilter_bsp/  -msmallc  -Wl,-Map=MedianFilter.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o MedianFilter.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert MedianFilter.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --id 0 --sidp 0x4001000 --timestamp 1553025219 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2hps --quartus_project_dir "C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus" --jdi ../..//output_files/arm-nios-img-filter.jdi --sopcinfo C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus/software/MedianFilter_bsp/../../nios2hps.sopcinfo
+Info: (MedianFilter.elf) 672 Bytes program size (code + initialized data).
+Info:                    65535 KBytes free for stack + heap.
+Info: Creating MedianFilter.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source MedianFilter.elf >MedianFilter.objdump
 [MedianFilter build complete]
 
-16:57:33 Build Finished (took 1s.7ms)
+15:13:13 Build Finished (took 3s.236ms)
 
