@@ -11,10 +11,10 @@ void printArray (int array[], int size){
     int i; 
 
     for (i=0; i < size; i++){
-      //printf("%d ", array[i]); 
+      printf("%d ", array[i]); 
        
     }
-    //printf("\n");
+    printf("\n");
           
 }
 int Bubblesort_Number (int array[], int size){
