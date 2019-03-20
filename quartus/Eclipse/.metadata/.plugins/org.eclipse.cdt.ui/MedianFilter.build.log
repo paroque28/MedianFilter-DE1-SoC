@@ -1,9 +1,9 @@
-15:42:14 **** Incremental Build of configuration Nios II for project MedianFilter ****
+15:56:52 **** Incremental Build of configuration Nios II for project MedianFilter ****
 make all 
 Info: Building ../MedianFilter_bsp/
 C:/quartus/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MedianFilter_bsp/
 [BSP build complete]
 [MedianFilter build complete]
 
-15:42:16 Build Finished (took 1s.555ms)
+15:56:56 Build Finished (took 3s.680ms)
 
