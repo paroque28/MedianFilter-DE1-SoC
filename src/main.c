@@ -4,6 +4,7 @@
 #include "utils/print.h"
 #include "utils/io.h"
 #include "utils/filter.h"
+#include "utils/demoImage.h"
 
 
 
@@ -14,25 +15,31 @@ int main(int argc, char *argv[]) {
     abort();
   }
 
+
   // Get Image properties
   png_props input_image_props = get_png_props(argv[1]);
   ImgSize input_image_size = {0,0,input_image_props.width, input_image_props.height};
   // Get Matrix from image
   PNGImage png_image = {read_png_file(argv[1]), input_image_size};
 
+
+
+
   Image image_matrix = png_to_Image(png_image);
 
 
-
-
-
+  /*
+  Image bw = black_and_white(image_matrix);
+  png_image = Image_to_png(bw);
+  write_png_file("res/black_white.png", png_image);
+  */
   //print_image(image_matrix);
 
 
   // FILTER IMAGE CODE
 
 
-
+  
   Image img1 = medianFilter3x3(image_matrix);
   png_image = Image_to_png(img1);
   write_png_file("3x3.png", png_image);
@@ -40,7 +47,7 @@ int main(int argc, char *argv[]) {
   Image img2 = medianFilter5x5(image_matrix);
   png_image = Image_to_png(img2);
   write_png_file("5x5.png", png_image);
-
+  
 
 
   //int array[] = {90 , 40 , 45 , 60};

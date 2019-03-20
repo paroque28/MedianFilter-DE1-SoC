@@ -104,6 +104,7 @@ synthesis
 *example*
 *sopc_*
 *.sopcinfo
+.vscode/
 PLLJ_PLLSPE_INFO.txt # The generated PLL specification file
 
 main
