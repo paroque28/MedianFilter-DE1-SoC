@@ -14,7 +14,9 @@
 #include "socal/alt_gpio.h"
 #include "socal/hps.h"
 #include "socal/socal.h"
-#include "hps_soc_system.h"
+
+//BSP:
+#include "../../quartus/software/MedianFilter_bsp/system.h"
 
 void open_physical_memory_device() {
     // We need to access the system's physical memory so we can map it to user
@@ -86,7 +88,7 @@ void mmap_fpga_peripherals() {
         exit(EXIT_FAILURE);
     }
 
-    fpga_leds = h2f_lw_axi_master + HPS_FPGA_LEDS_BASE;
+    fpga_leds = h2f_lw_axi_master + SDRAM_CONTROLLER_BASE;
 }
 
 void munmap_fpga_peripherals() {
@@ -146,7 +148,7 @@ void handle_hps_led() {
 void handle_fpga_leds() {
     uint32_t leds_mask = alt_read_word(fpga_leds);
 
-    if (leds_mask != (0x01 << (HPS_FPGA_LEDS_DATA_WIDTH - 1))) {
+    if (leds_mask != (0x01 << (SDRAM_CONTROLLER_DATA_WIDTH - 1))) {
         // rotate leds
         leds_mask <<= 1;
     } else {
@@ -158,7 +160,7 @@ void handle_fpga_leds() {
 }
 
 int main() {
-    printf("DE1-SoC linux demo\n");
+    printf("DE1-SoC linux demo SDRAM\n");
 
     open_physical_memory_device();
     mmap_peripherals();
