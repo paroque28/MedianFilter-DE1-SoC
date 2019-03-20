@@ -1,6 +1,7 @@
 #ifndef HPS_LINUX_H_
 #define HPS_LINUX_H_
 
+
 #include <assert.h>
 #include <errno.h>
 #include <fcntl.h>
@@ -21,10 +22,6 @@
 #include "alt_generalpurpose_io.h"
 //BSP:
 #include "system.h"
-
-
-
-
 // |=============|==========|==============|==========|
 // | Signal Name | HPS GPIO | Register/bit | Function |
 // |=============|==========|==============|==========|
