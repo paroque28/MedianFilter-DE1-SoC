@@ -65,8 +65,8 @@ void munmap_fpga_peripherals();
 void mmap_peripherals();
 void munmap_peripherals();
 void setup_hps_gpio();
-void setup_fpga_sdram();
-void handle_hps_sdram();
+void setup_fpga_leds();
+void handle_hps_led();
 void handle_fpga_leds();
 
 #endif

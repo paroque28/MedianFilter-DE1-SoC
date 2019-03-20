@@ -1,20 +1,12 @@
-14:44:30 **** Incremental Build of configuration Debug for project ARM-master ****
+14:50:11 **** Incremental Build of configuration Debug for project ARM-master ****
 make all 
-Building file: ../hps_linux.c
+Building file: ../alt_generalpurpose_io.c
 Invoking: GCC C Compiler 4 [arm-linux-gnueabihf]
-arm-linux-gnueabihf-gcc -Dsoc_cv_av -I"C:\intelFPGA\18.1\embedded\ip\altera\hps\altera_hps\hwlib\include" -I"C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\quartus\software\MedianFilter_bsp" -I"C:\intelFPGA\18.1\embedded\ip\altera\hps\altera_hps\hwlib\include\soc_cv_av" -O0 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"hps_linux.d" -MT"hps_linux.o" -o "hps_linux.o" "../hps_linux.c"
-Finished building: ../hps_linux.c
+arm-linux-gnueabihf-gcc -Dsoc_cv_av -I"C:\intelFPGA\18.1\embedded\ip\altera\hps\altera_hps\hwlib\include" -I"C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\quartus\software\MedianFilter_bsp" -I"C:\intelFPGA\18.1\embedded\ip\altera\hps\altera_hps\hwlib\include\soc_cv_av" -O0 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"alt_generalpurpose_io.d" -MT"alt_generalpurpose_io.o" -o "alt_generalpurpose_io.o" "../alt_generalpurpose_io.c"
+Finished building: ../alt_generalpurpose_io.c
  
 Building target: ARM-master
 Invoking: GCC C Linker 4 [arm-linux-gnueabihf]
-arm-linux-gnueabihf-gcc  -o "ARM-master"  ./hps_linux.o   
-./hps_linux.o: In function `setup_hps_gpio':
-C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\ARM-master\Debug/../hps_linux.c:104: undefined reference to `alt_gpio_bit_to_port_pin'
-C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\ARM-master\Debug/../hps_linux.c:105: undefined reference to `alt_gpio_bit_to_port_pin'
-./hps_linux.o: In function `handle_hps_led':
-C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\ARM-master\Debug/../hps_linux.c:117: undefined reference to `alt_gpio_bit_to_port_pin'
-C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\ARM-master\Debug/../hps_linux.c:120: undefined reference to `alt_gpio_bit_to_port_pin'
-C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\ARM-master\Debug/../hps_linux.c:124: undefined reference to `alt_gpio_bit_to_port_pin'
-./hps_linux.o:C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\ARM-master\Debug/../hps_linux.c:126: more undefined references to `alt_gpio_bit_to_port_pin' follow
-collect2.exe: error: ld returned 1 exit status
-make: *** [makefile:31: ARM-master] Error 1
+arm-linux-gnueabihf-gcc  -o "ARM-master"  ./alt_generalpurpose_io.o ./hps_linux.o   
+Finished building target: ARM-master
+ 

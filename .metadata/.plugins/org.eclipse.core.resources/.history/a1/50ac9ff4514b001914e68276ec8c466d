@@ -105,7 +105,7 @@ void setup_hps_gpio() {
     alt_setbits_word(hps_gpio_direction, ALT_GPIO_PIN_INPUT << HPS_KEY_N_PORT_BIT);
 }
 
-void setup_fpga_sdram() {
+void setup_fpga_leds() {
     // Switch on first LED only
     alt_write_word(fpga_sdram, 0x1);
 }
@@ -149,7 +149,7 @@ int main() {
     mmap_peripherals();
 
     setup_hps_gpio();
-    setup_fpga_sdram();
+    setup_fpga_leds();
 
     while (true) {
         handle_hps_sdram();

@@ -105,12 +105,12 @@ void setup_hps_gpio() {
     alt_setbits_word(hps_gpio_direction, ALT_GPIO_PIN_INPUT << HPS_KEY_N_PORT_BIT);
 }
 
-void setup_fpga_sdram() {
+void setup_fpga_leds() {
     // Switch on first LED only
     alt_write_word(fpga_sdram, 0x1);
 }
 
-void handle_hps_sdram() {
+void handle_hps_led() {
     void *hps_gpio_data = ALT_GPIO_SWPORTA_DR_ADDR(hps_gpio);
     void *hps_gpio_port = ALT_GPIO_EXT_PORTA_ADDR(hps_gpio);
 
@@ -149,10 +149,10 @@ int main() {
     mmap_peripherals();
 
     setup_hps_gpio();
-    setup_fpga_sdram();
+    setup_fpga_leds();
 
     while (true) {
-        handle_hps_sdram();
+        handle_hps_led();
         handle_fpga_leds();
         usleep(ALT_MICROSECS_IN_A_SEC / 10);
     }
