@@ -1,6 +1,6 @@
 CC=arm-linux-gnueabihf-gcc 
 CFLAGS=-Ilibs/hwlib/include -Ilibs/hwlib/include/soc_cv_av
-DEPS= 
+DEPS= libs\hwlib\src\hwmgr\alt_generalpurpose_io.c
 HEADERS= src/hps_linux.h src/hps_soc_system.h ../quartus/software/MedianFilter_bsp/system.h
 
 main: src/main.c $(DEPS) $(HEADERS)
