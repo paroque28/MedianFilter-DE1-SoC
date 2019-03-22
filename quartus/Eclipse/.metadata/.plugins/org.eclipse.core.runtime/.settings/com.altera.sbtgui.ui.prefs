@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
-newSoftwareExampleWizardPage.defaultLocation=C\:\\Users\\prodrigu\\git\\arqui2\\MedianFilter-DE1-SoC\\quartus\\software\\MedianFilter
+newBspWizardPage.defaultLocation=C\:\\Users\\prodrigu\\git\\arqui2\\MedianFilter-DE1-SoC\\quartus\\software\\nios2_bsp
+newBspWizardPage.sopcinfoFile=C\:\\Users\\prodrigu\\git\\arqui2\\MedianFilter-DE1-SoC\\quartus\\nios2hps.sopcinfo
+newSoftwareExampleWizardPage.defaultLocation=C\:\\Users\\prodrigu\\git\\arqui2\\MedianFilter-DE1-SoC\\nios2
 newSoftwareExampleWizardPage.sopcinfoFile=C\:\\Users\\prodrigu\\git\\arqui2\\MedianFilter-DE1-SoC\\quartus\\nios2hps.sopcinfo
-newSoftwareExampleWizardPage2.newBspLocation=C\:\\Users\\prodrigu\\git\\arqui2\\MedianFilter-DE1-SoC\\quartus\\software\\MedianFilter_bsp
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\Users\\prodrigu\\git\\arqui2\\MedianFilter-DE1-SoC\\nios2_bsp

@@ -1,0 +1,9 @@
+13:46:43 **** Incremental Build of configuration Nios II for project nios2 ****
+make all 
+Info: Building C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/
+C:/quartus/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/
+[BSP build complete]
+[nios2 build complete]
+
+13:46:44 Build Finished (took 1s.7ms)
+
