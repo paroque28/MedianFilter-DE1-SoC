@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Mar 22, 2019 1:38:20 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1553283500984</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Mar 23, 2019 3:17:33 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1553375853013</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\nios2_bsp</BspGeneratedLocation>
         <BspSettingsFile>.\settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\quartus\nios2hps.sopcinfo</SopcDesignFile>
@@ -86,7 +86,7 @@
                 <SettingName>hal.linker.enable_alt_load_copy_rodata</SettingName>
                 <Identifier>none</Identifier>
                 <Type>Boolean</Type>
-                <Value>0</Value>
+                <Value>1</Value>
                 <DefaultValue>0</DefaultValue>
                 <DestinationFile>none</DestinationFile>
                 <Description>Causes the alt_load() facility to copy the .rodata section. If true, this setting defines the macro ALT_LOAD_COPY_RODATA in linker.h.</Description>
@@ -899,32 +899,38 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
-                <slaveDescriptor>sdram_controller</slaveDescriptor>
-                <addressRange>0x04000000 - 0x07FFFFFF</addressRange>
-                <addressSpan>67108864</addressSpan>
+                <slaveDescriptor>onchip_memory</slaveDescriptor>
+                <addressRange>0x00000000 - 0x00001FFF</addressRange>
+                <addressSpan>8192</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>onchip_memory</slaveDescriptor>
-                <addressRange>0x08000000 - 0x08001869</addressRange>
-                <addressSpan>6250</addressSpan>
-                <attributes>memory</attributes>
+                <slaveDescriptor>leds</slaveDescriptor>
+                <addressRange>0x00002000 - 0x0000200F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid</slaveDescriptor>
-                <addressRange>0x08002800 - 0x08002807</addressRange>
+                <addressRange>0x00003000 - 0x00003007</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x08002808 - 0x0800280F</addressRange>
+                <addressRange>0x00004000 - 0x00004007</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sdram_controller</slaveDescriptor>
+                <addressRange>0x04000000 - 0x07FFFFFF</addressRange>
+                <addressSpan>67108864</addressSpan>
+                <attributes>memory</attributes>
+        </MemoryMap>
         <LinkerSection>
                 <sectionName>.text</sectionName>
-                <regionName>sdram_controller</regionName>
+                <regionName>onchip_memory</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.rodata</sectionName>

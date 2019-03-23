@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.arm.debugger.launcher2">
+<mapAttribute key="AverageDurationTracker">
+<mapEntry key="*Fetching Data Model" value="377959"/>
+<mapEntry key="*list global low level symbols" value="1413912"/>
+<mapEntry key="*loading values from target" value="16907964"/>
+<mapEntry key="*updating variables" value="75307"/>
+<mapEntry key="AddEventObserver" value="1135615"/>
+<mapEntry key="Evaluate" value="1075232"/>
+<mapEntry key="Retrieving globals list" value="2254073"/>
+<mapEntry key="compute execution mode" value="616948"/>
+<mapEntry key="console" value="118235593"/>
+<mapEntry key="continue" value="13719657"/>
+<mapEntry key="disassemble" value="125297124"/>
+<mapEntry key="file" value="76723336"/>
+<mapEntry key="get capabilities" value="106474"/>
+<mapEntry key="get execution addresss" value="237108"/>
+<mapEntry key="get source lines" value="493301"/>
+<mapEntry key="initialize command help" value="37707909"/>
+<mapEntry key="interrupt" value="6396920"/>
+<mapEntry key="list breakpoint options" value="141847"/>
+<mapEntry key="list breakpoints" value="627663"/>
+<mapEntry key="list instruction sets" value="606651"/>
+<mapEntry key="list signals" value="6291346"/>
+<mapEntry key="list watchpoint options" value="605173"/>
+<mapEntry key="list watchpoints" value="380787"/>
+<mapEntry key="set CWD" value="3519167"/>
+<mapEntry key="set debug-from" value="740241"/>
+<mapEntry key="start" value="55563030"/>
+<mapEntry key="waitForTargetToStop" value="133135909"/>
+</mapAttribute>
 <intAttribute key="DEBUG_TAB..RESOURCES.COUNT" value="0"/>
 <intAttribute key="FILES.CONNECT_TO_GDB_SERVER.RESOURCES.COUNT" value="0"/>
 <intAttribute key="FILES.DEBUG_EXISTING_ANDROID.RESOURCES.COUNT" value="0"/>
@@ -8,9 +37,9 @@
 <stringAttribute key="FILES.DEBUG_RESIDENT_ANDROID.RESOURCES.0.VALUE" value=""/>
 <intAttribute key="FILES.DEBUG_RESIDENT_ANDROID.RESOURCES.COUNT" value="1"/>
 <listAttribute key="FILES.DEBUG_RESIDENT_APP"/>
-<stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.TYPE" value="APPLICATION_ON_TARGET"/>
+<stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
 <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.VALUE" value=""/>
-<stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.TYPE" value="TARGET_WORKING_DIR"/>
+<stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.TYPE" value="APPLICATION_ON_TARGET"/>
 <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.VALUE" value=""/>
 <intAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.COUNT" value="2"/>
 <listAttribute key="FILES.DOWNLOAD_AND_DEBUG"/>
@@ -18,19 +47,19 @@
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.VALUE" value=""/>
-<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.TYPE" value="TARGET_WORKING_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.VALUE" value=""/>
-<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.TYPE" value="TARGET_WORKING_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.TYPE" value="TARGET_DOWNLOAD_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.VALUE" value=""/>
 <intAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.COUNT" value="3"/>
 <listAttribute key="FILES.DOWNLOAD_DEBUG"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
-<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.VALUE" value="${workspace_loc:/ARM-master/Debug/ARM-master}"/>
-<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.VALUE" value="${workspace_loc:/ARM/Debug/ARM}"/>
+<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.TYPE" value="TARGET_WORKING_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.VALUE" value="/home/root/eclipse"/>
-<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.TYPE" value="TARGET_WORKING_DIR"/>
+<stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.TYPE" value="TARGET_DOWNLOAD_DIR"/>
 <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.VALUE" value="/home/root/eclipse"/>
 <intAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.COUNT" value="3"/>
 <intAttribute key="FILES.DOWNLOAD_DEBUG_ANDROID.RESOURCES.COUNT" value="0"/>
@@ -66,7 +95,7 @@
 <booleanAttribute key="HOST_WORKING_DIR_USE_DEFAULT" value="true"/>
 <booleanAttribute key="KEY_COMMANDS_AFTER_CONNECT" value="false"/>
 <stringAttribute key="KEY_COMMANDS_AFTER_CONNECT_TEXT" value=""/>
-<stringAttribute key="RSE_CONFIGURATION" value="192.168.1.132"/>
+<stringAttribute key="RSE_CONFIGURATION" value="arm"/>
 <booleanAttribute key="RSE_USE_HOSTNAME" value="true"/>
 <stringAttribute key="TCP_DISABLE_EXTENDED_MODE" value="false"/>
 <booleanAttribute key="TCP_KILL_ON_EXIT" value="false"/>
@@ -80,6 +109,7 @@
 <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.ranges">
 <listEntry value="100"/>
 </listAttribute>
+<stringAttribute key="com.arm.debug.views.debugConsole.DebugCommandLine.History" value="r;q;r;q"/>
 <stringAttribute key="config_db_activity_name" value="Download and debug application"/>
 <stringAttribute key="config_db_connection_keys" value="gdb_address gdb_port gdb_disable_acks setup TCP_KILL_ON_EXIT TCP_DISABLE_EXTENDED_MODE"/>
 <stringAttribute key="config_db_connection_type" value="gdbserver (TCP)"/>
@@ -93,6 +123,7 @@
 <listEntry value="&lt;Next Instruction&gt;"/>
 <listEntry value="100"/>
 </listAttribute>
+<stringAttribute key="debugger.view.VariableTreeView:DebugOutlineColumnState" value="OutlineConfig1&#9;8&#9;0&#9;true&#9;true&#9;149&#9;-1&#9;true&#9;1&#9;false&#9;true&#9;90&#9;-1&#9;true&#9;2&#9;true&#9;true&#9;122&#9;-1&#9;true&#9;3&#9;true&#9;true&#9;45&#9;-1&#9;true&#9;4&#9;true&#9;true&#9;50&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;37&#9;-1&#9;true&#9;6&#9;true&#9;true&#9;80&#9;-1&#9;true&#9;7&#9;true&#9;true&#9;53&#9;-1&#9;true"/>
 <listAttribute key="debugger.view.VariableTreeView:USER_ADDED_FILE_STATICS"/>
 <listAttribute key="debugger.view.VariableTreeView:USER_ADDED_GLOBALS"/>
 <booleanAttribute key="debugger.view.variable.DrawAsHex" value="false"/>

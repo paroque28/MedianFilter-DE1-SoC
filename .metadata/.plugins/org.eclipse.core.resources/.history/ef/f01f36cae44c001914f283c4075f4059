@@ -1,0 +1,47 @@
+/*
+ ============================================================================
+ Name        : ARM.c
+
+ Author      : Pablo Rodriguez Quesada
+ Version     :
+ Copyright   : BSD 3-Clause License
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+#include "ARM.h"
+
+//#define LED_PIO_SPAN            0x10
+
+int main(void)
+{
+
+	unsigned long *onchip_mem;
+	int fd;
+	int i;
+
+
+	puts("Median Filter!!!"); /* prints Median Filter */
+	puts("Altera LightWeight offset: %X", ALT_LWFPGASLVS_OFST);
+	puts("On Chip Memory offset: %X", ONCHIP_MEMORY_BASE);
+	puts("On Chip Memory SPAN: %X", ONCHIP_MEMORY_SPAN);
+
+	fd = open("/dev/mem", (O_RDWR | O_SYNC));
+
+
+	//Map LED_PIO Physical Address to Virtual Address Space
+	onchip_mem = mmap( NULL, ONCHIP_MEMORY_SPAN, ( PROT_READ | PROT_WRITE ), MAP_SHARED, fd, (ALT_LWFPGASLVS_OFST + ONCHIP_MEMORY_BASE) );
+
+	//Toggle all LEDs every 1000ms a few times
+	for (i=0; i < 10; i++)
+	{
+	   *onchip_mem ^= 0xFF; //Bit0=LED0 … Bit7=LED7
+	   usleep(1000*1000);
+	}
+
+
+	//Unmap
+	munmap(onchip_mem, ONCHIP_MEMORY_SPAN);
+
+	close(fd);
+	return(0);
+}

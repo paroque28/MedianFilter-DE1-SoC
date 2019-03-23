@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios2hps'
  * SOPC Builder design path: C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus/nios2hps.sopcinfo
  *
- * Generated: Fri Mar 22 13:38:21 CST 2019
+ * Generated: Sat Mar 23 15:17:34 CST 2019
  */
 
 /*

@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2' in SOPC Builder design 'nios2hps'
 # SOPC Builder design path: C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus/nios2hps.sopcinfo
 #
-# Generated: Fri Mar 22 13:38:21 CST 2019
+# Generated: Sat Mar 23 15:17:34 CST 2019
 
 # DO NOT MODIFY THIS FILE
 #
@@ -46,8 +46,8 @@
 # The cache attribute is specified which improves GDB performance
 # by allowing GDB to cache memory contents on the host.
 
+# onchip_memory
+memory 0x0 0x2000 cache
+
 # sdram_controller
 memory 0x4000000 0x8000000 cache
-
-# onchip_memory
-memory 0x8000000 0x800186a cache

@@ -1,10 +1,4 @@
-13:38:22 **** Clean-only build of configuration Nios II for project nios2_bsp ****
-make clean 
-[BSP clean complete]
-13:38:25 **** Clean-only build of configuration Nios II for project nios2 ****
-make clean 
-[nios2 clean complete]
-13:38:49 **** Build of configuration Nios II for project nios2 ****
+15:18:47 **** Build of configuration Nios II for project nios2 ****
 make all 
 Info: Building C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/
 C:/quartus/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/
@@ -190,159 +184,38 @@ Creating libhal_bsp.a...
 rm -f -f libhal_bsp.a
 nios2-elf-ar -src libhal_bsp.a obj/HAL/src/alt_alarm_start.o obj/HAL/src/alt_busy_sleep.o obj/HAL/src/alt_close.o obj/HAL/src/alt_dcache_flush.o obj/HAL/src/alt_dcache_flush_all.o obj/HAL/src/alt_dcache_flush_no_writeback.o obj/HAL/src/alt_dev.o obj/HAL/src/alt_dev_llist_insert.o obj/HAL/src/alt_dma_rxchan_open.o obj/HAL/src/alt_dma_txchan_open.o obj/HAL/src/alt_do_ctors.o obj/HAL/src/alt_do_dtors.o obj/HAL/src/alt_ecc_fatal_entry.o obj/HAL/src/alt_ecc_fatal_exception.o obj/HAL/src/alt_env_lock.o obj/HAL/src/alt_environ.o obj/HAL/src/alt_errno.o obj/HAL/src/alt_exception_entry.o obj/HAL/src/alt_exception_muldiv.o obj/HAL/src/alt_exception_trap.o obj/HAL/src/alt_execve.o obj/HAL/src/alt_exit.o obj/HAL/src/alt_fcntl.o obj/HAL/src/alt_fd_lock.o obj/HAL/src/alt_fd_unlock.o obj/HAL/src/alt_find_dev.o obj/HAL/src/alt_find_file.o obj/HAL/src/alt_flash_dev.o obj/HAL/src/alt_fork.o obj/HAL/src/alt_fs_reg.o obj/HAL/src/alt_fstat.o obj/HAL/src/alt_get_fd.o obj/HAL/src/alt_getchar.o obj/HAL/src/alt_getpid.o obj/HAL/src/alt_gettod.o obj/HAL/src/alt_gmon.o obj/HAL/src/alt_icache_flush.o obj/HAL/src/alt_icache_flush_all.o obj/HAL/src/alt_iic.o obj/HAL/src/alt_iic_isr_register.o obj/HAL/src/alt_instruction_exception_entry.o obj/HAL/src/alt_instruction_exception_register.o obj/HAL/src/alt_io_redirect.o obj/HAL/src/alt_ioctl.o obj/HAL/src/alt_irq_entry.o obj/HAL/src/alt_irq_handler.o obj/HAL/src/alt_irq_register.o obj/HAL/src/alt_irq_vars.o obj/HAL/src/alt_isatty.o obj/HAL/src/alt_kill.o obj/HAL/src/alt_link.o obj/HAL/src/alt_load.o obj/HAL/src/alt_log_macro.o obj/HAL/src/alt_log_printf.o obj/HAL/src/alt_lseek.o obj/HAL/src/alt_main.o obj/HAL/src/alt_malloc_lock.o obj/HAL/src/alt_mcount.o obj/HAL/src/alt_open.o obj/HAL/src/alt_printf.o obj/HAL/src/alt_putchar.o obj/HAL/src/alt_putcharbuf.o obj/HAL/src/alt_putstr.o obj/HAL/src/alt_read.o obj/HAL/src/alt_release_fd.o obj/HAL/src/alt_remap_cached.o obj/HAL/src/alt_remap_uncached.o obj/HAL/src/alt_rename.o obj/HAL/src/alt_sbrk.o obj/HAL/src/alt_settod.o obj/HAL/src/alt_software_exception.o obj/HAL/src/alt_stat.o obj/HAL/src/alt_tick.o obj/HAL/src/alt_times.o obj/HAL/src/alt_uncached_free.o obj/HAL/src/alt_uncached_malloc.o obj/HAL/src/alt_unlink.o obj/HAL/src/alt_usleep.o obj/HAL/src/alt_wait.o obj/HAL/src/alt_write.o obj/HAL/src/altera_nios2_gen2_irq.o obj/HAL/src/crt0.o obj/alt_sys_init.o obj/drivers/src/altera_avalon_jtag_uart_fd.o obj/drivers/src/altera_avalon_jtag_uart_init.o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o obj/drivers/src/altera_avalon_jtag_uart_read.o obj/drivers/src/altera_avalon_jtag_uart_write.o obj/drivers/src/altera_avalon_sysid_qsys.o
 [BSP build complete]
-Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
-nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//HAL/inc -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/ -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//HAL/inc -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/ -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:13:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   strcpy(onchip_mem,src);
+   ^
+main.c:13:3: warning: incompatible implicit declaration of built-in function 'strcpy'
+main.c:13:3: note: include '<string.h>' or provide a declaration of 'strcpy'
+main.c:13:10: warning: passing argument 1 of 'strcpy' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   strcpy(onchip_mem,src);
+          ^
+main.c:13:10: note: expected 'char *' but argument is of type 'volatile char *'
+main.c:18:15: warning: passing argument 1 of 'alt_putstr' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+    alt_putstr(onchip_mem);
+               ^
+In file included from main.c:1:0:
+c:\users\prodrigu\git\arqui2\medianfilter-de1-soc\nios2_bsp\hal\inc\sys\alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'volatile char *'
+ int alt_putstr(const char* str);
+     ^
+main.c:19:4: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+    printf("|------------\nchar: %c\n",*base);
+    ^
+main.c:19:4: warning: incompatible implicit declaration of built-in function 'printf'
+main.c:19:4: note: include '<stdio.h>' or provide a declaration of 'printf'
+main.c:20:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(200000); //one second
+    ^
 Info: Linking nios2.elf
-nios2-elf-g++  -T'C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//linker.x' -msys-crt0='C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/  -msmallc  -Wl,-Map=nios2.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios2.elf obj/default/hello_world_small.o -lm -msys-lib=m
-nios2-elf-insert nios2.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --id 0 --sidp 0x8002800 --timestamp 1553266977 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2hps --quartus_project_dir "c:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus" --jdi C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus//output_files/arm-nios-img-filter.jdi --sopcinfo C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus/nios2hps.sopcinfo
-Info: (nios2.elf) 612 Bytes program size (code + initialized data).
+nios2-elf-g++  -T'C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//linker.x' -msys-crt0='C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/  -msmallc  -Wl,-Map=nios2.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios2.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert nios2.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --id 0 --sidp 0x3000 --timestamp 1553375431 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2hps --quartus_project_dir "c:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus" --jdi C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus//output_files/arm-nios-img-filter.jdi --sopcinfo C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus/nios2hps.sopcinfo
+Info: (nios2.elf) 3668 Bytes program size (code + initialized data).
 Info:             65535 KBytes free for stack + heap.
 Info: Creating nios2.objdump
 nios2-elf-objdump --disassemble --syms --all-header --source nios2.elf >nios2.objdump
-[nios2 build complete]
-13:44:42 **** Incremental Build of configuration Nios II for project nios2 ****
-make all 
-Info: Building C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/
-C:/quartus/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/
-[BSP build complete]
-Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
-nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//HAL/inc -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/ -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
-hello_world_small.c: In function 'main':
-hello_world_small.c:11:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
-   strcpy(onchip_mem,src);
-   ^
-hello_world_small.c:11:3: warning: incompatible implicit declaration of built-in function 'strcpy'
-hello_world_small.c:11:3: note: include '<string.h>' or provide a declaration of 'strcpy'
-hello_world_small.c:11:10: warning: passing argument 1 of 'strcpy' discards 'const volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-   strcpy(onchip_mem,src);
-          ^
-hello_world_small.c:11:10: note: expected 'char *' but argument is of type 'const volatile char *'
-hello_world_small.c:16:15: warning: passing argument 1 of 'alt_putstr' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-    alt_putstr(onchip_mem);
-               ^
-In file included from hello_world_small.c:1:0:
-c:\users\prodrigu\git\arqui2\medianfilter-de1-soc\nios2_bsp\hal\inc\sys\alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'const volatile char *'
- int alt_putstr(const char* str);
-     ^
-hello_world_small.c:17:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
-    usleep(1000);
-    ^
-Info: Linking nios2.elf
-nios2-elf-g++  -T'C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//linker.x' -msys-crt0='C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/  -msmallc  -Wl,-Map=nios2.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios2.elf obj/default/hello_world_small.o -lm -msys-lib=m
-nios2-elf-insert nios2.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --id 0 --sidp 0x8002800 --timestamp 1553266977 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2hps --quartus_project_dir "c:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus" --jdi C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus//output_files/arm-nios-img-filter.jdi --sopcinfo C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus/nios2hps.sopcinfo
-Info: (nios2.elf) 1400 Bytes program size (code + initialized data).
-Info:             65534 KBytes free for stack + heap.
-Info: Creating nios2.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source nios2.elf >nios2.objdump
-[nios2 build complete]
-13:45:00 **** Incremental Build of configuration Nios II for project nios2 ****
-make all 
-Info: Building C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/
-C:/quartus/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/
-[BSP build complete]
-Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
-nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//HAL/inc -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/ -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
-hello_world_small.c: In function 'main':
-hello_world_small.c:11:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
-   strcpy(onchip_mem,src);
-   ^
-hello_world_small.c:11:3: warning: incompatible implicit declaration of built-in function 'strcpy'
-hello_world_small.c:11:3: note: include '<string.h>' or provide a declaration of 'strcpy'
-hello_world_small.c:11:10: warning: passing argument 1 of 'strcpy' discards 'const volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-   strcpy(onchip_mem,src);
-          ^
-hello_world_small.c:11:10: note: expected 'char *' but argument is of type 'const volatile char *'
-hello_world_small.c:16:15: warning: passing argument 1 of 'alt_putstr' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-    alt_putstr(onchip_mem);
-               ^
-In file included from hello_world_small.c:1:0:
-c:\users\prodrigu\git\arqui2\medianfilter-de1-soc\nios2_bsp\hal\inc\sys\alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'const volatile char *'
- int alt_putstr(const char* str);
-     ^
-hello_world_small.c:17:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
-    usleep(10000);
-    ^
-Info: Linking nios2.elf
-nios2-elf-g++  -T'C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//linker.x' -msys-crt0='C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/  -msmallc  -Wl,-Map=nios2.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios2.elf obj/default/hello_world_small.o -lm -msys-lib=m
-nios2-elf-insert nios2.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --id 0 --sidp 0x8002800 --timestamp 1553266977 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2hps --quartus_project_dir "c:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus" --jdi C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus//output_files/arm-nios-img-filter.jdi --sopcinfo C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus/nios2hps.sopcinfo
-Info: (nios2.elf) 1400 Bytes program size (code + initialized data).
-Info:             65534 KBytes free for stack + heap.
-Info: Creating nios2.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source nios2.elf >nios2.objdump
-[nios2 build complete]
-13:45:14 **** Incremental Build of configuration Nios II for project nios2 ****
-make all 
-Info: Building C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/
-C:/quartus/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/
-[BSP build complete]
-Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
-nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//HAL/inc -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/ -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
-hello_world_small.c: In function 'main':
-hello_world_small.c:11:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
-   strcpy(onchip_mem,src);
-   ^
-hello_world_small.c:11:3: warning: incompatible implicit declaration of built-in function 'strcpy'
-hello_world_small.c:11:3: note: include '<string.h>' or provide a declaration of 'strcpy'
-hello_world_small.c:11:10: warning: passing argument 1 of 'strcpy' discards 'const volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-   strcpy(onchip_mem,src);
-          ^
-hello_world_small.c:11:10: note: expected 'char *' but argument is of type 'const volatile char *'
-hello_world_small.c:16:15: warning: passing argument 1 of 'alt_putstr' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-    alt_putstr(onchip_mem);
-               ^
-In file included from hello_world_small.c:1:0:
-c:\users\prodrigu\git\arqui2\medianfilter-de1-soc\nios2_bsp\hal\inc\sys\alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'const volatile char *'
- int alt_putstr(const char* str);
-     ^
-hello_world_small.c:17:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
-    usleep(1000000);
-    ^
-Info: Linking nios2.elf
-nios2-elf-g++  -T'C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//linker.x' -msys-crt0='C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/  -msmallc  -Wl,-Map=nios2.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios2.elf obj/default/hello_world_small.o -lm -msys-lib=m
-nios2-elf-insert nios2.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --id 0 --sidp 0x8002800 --timestamp 1553266977 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2hps --quartus_project_dir "c:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus" --jdi C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus//output_files/arm-nios-img-filter.jdi --sopcinfo C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus/nios2hps.sopcinfo
-Info: (nios2.elf) 1404 Bytes program size (code + initialized data).
-Info:             65534 KBytes free for stack + heap.
-Info: Creating nios2.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source nios2.elf >nios2.objdump
-[nios2 build complete]
-13:45:37 **** Incremental Build of configuration Nios II for project nios2 ****
-make all 
-Info: Building C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/
-C:/quartus/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/
-[BSP build complete]
-Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
-nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//HAL/inc -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/ -IC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
-hello_world_small.c: In function 'main':
-hello_world_small.c:11:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
-   strcpy(onchip_mem,src);
-   ^
-hello_world_small.c:11:3: warning: incompatible implicit declaration of built-in function 'strcpy'
-hello_world_small.c:11:3: note: include '<string.h>' or provide a declaration of 'strcpy'
-hello_world_small.c:11:10: warning: passing argument 1 of 'strcpy' discards 'const volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-   strcpy(onchip_mem,src);
-          ^
-hello_world_small.c:11:10: note: expected 'char *' but argument is of type 'const volatile char *'
-hello_world_small.c:16:15: warning: passing argument 1 of 'alt_putstr' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-    alt_putstr(onchip_mem);
-               ^
-In file included from hello_world_small.c:1:0:
-c:\users\prodrigu\git\arqui2\medianfilter-de1-soc\nios2_bsp\hal\inc\sys\alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'const volatile char *'
- int alt_putstr(const char* str);
-     ^
-hello_world_small.c:17:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
-    usleep(100000);
-    ^
-Info: Linking nios2.elf
-nios2-elf-g++  -T'C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//linker.x' -msys-crt0='C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/  -msmallc  -Wl,-Map=nios2.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios2.elf obj/default/hello_world_small.o -lm -msys-lib=m
-nios2-elf-insert nios2.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --id 0 --sidp 0x8002800 --timestamp 1553266977 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios2hps --quartus_project_dir "c:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus" --jdi C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus//output_files/arm-nios-img-filter.jdi --sopcinfo C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus/nios2hps.sopcinfo
-Info: (nios2.elf) 1404 Bytes program size (code + initialized data).
-Info:             65534 KBytes free for stack + heap.
-Info: Creating nios2.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source nios2.elf >nios2.objdump
-[nios2 build complete]
-13:46:43 **** Incremental Build of configuration Nios II for project nios2 ****
-make all 
-Info: Building C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/
-C:/quartus/18.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2_bsp/
-[BSP build complete]
 [nios2 build complete]

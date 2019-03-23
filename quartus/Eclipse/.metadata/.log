@@ -824,3 +824,2062 @@ java.lang.NullPointerException
 
 !ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 13:46:46.817
 !MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x8830 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 13:59:05.051
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 13:59:05.648
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x8830]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-03-22 13:59:07.749
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=0x8830] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 13:59:07.771
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x8830 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-03-22 13:59:10.322
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, --accept-bad-sysid, --sidp=0x8830, --reset-target, /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-03-22 13:59:10.332
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:00:57.067
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x8002800]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-03-22 14:00:59.130
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=0x8002800] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:00:59.188
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x8002800 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-03-22 14:01:01.555
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, --accept-bad-sysid, --sidp=0x8002800, --reset-target, /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-03-22 14:01:01.565
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.528
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.538
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.551
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.561
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.575
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.587
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.600
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.611
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.621
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.633
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.644
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.654
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.666
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.677
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.687
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.699
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.710
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.722
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.733
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.744
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.757
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.767
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.779
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.788
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.798
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.808
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.819
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.829
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.839
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.849
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.858
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.869
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.879
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.889
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.899
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY org.eclipse.ui 4 0 2019-03-22 14:02:09.908
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1953)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1286)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1095)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1544)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:113)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$0(AbstractEmbeddedAwtLaunchConfigurationTab.java:1)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 24 more
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:02:12.832
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x8002800]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:02:14.964
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x8002800 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:02:32.838
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:02:33.422
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x8002800]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-03-22 14:02:35.522
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=0x8002800] return code: 2, no processors found
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:02:35.607
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x8002800 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:02:36.402
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x8002800]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-03-22 14:02:38.172
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, --accept-bad-sysid, --sidp=0x8002800, --reset-target, /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf] return code: 2, no processors found
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-03-22 14:02:38.183
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-03-22 14:02:38.496
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop, --accept-bad-sysid, --sidp=0x8002800] return code: 2, no processors found
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:02:38.567
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x8002800 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-03-22 14:02:41.067
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, --accept-bad-sysid, --sidp=0x8002800, --reset-target, /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf] return code: 2, no processors found
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-03-22 14:02:41.076
+!MESSAGE Downloading ELF Process failed
+!SESSION 2019-03-22 14:15:22.577 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-03-22 14:15:42.236
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 4 567 2019-03-22 14:15:42.585
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2019-03-22 14:15:42.585
+!MESSAGE Could not read metadata for 'MedianFilter'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'MedianFilter' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:902)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:882)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:733)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1588)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2386)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2157)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:463)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:140)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2019-03-22 14:15:42.587
+!MESSAGE The project description file (.project) for 'MedianFilter' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2019-03-22 14:15:42.587
+!MESSAGE Could not read metadata for 'MedianFilter_bsp'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'MedianFilter_bsp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:902)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:882)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:733)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1588)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2386)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2157)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:463)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:140)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2019-03-22 14:15:42.588
+!MESSAGE The project description file (.project) for 'MedianFilter_bsp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:17:14.415
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x8002800]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:17:16.525
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x8002800 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:17:38.322
+!MESSAGE Terminated Launch with connection: 20
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:17:39.064
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x8002800]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:17:41.246
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x8002800 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+!SESSION 2019-03-22 14:55:00.967 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-03-22 14:55:41.620
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:55:56.658
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x8002800]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 14:55:58.308
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x8002800 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+!SESSION 2019-03-22 15:57:33.341 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-03-22 15:57:44.772
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 15:58:23.047
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x8002800]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 15:58:25.345
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x8002800 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+!SESSION 2019-03-22 16:20:01.978 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-03-22 16:20:08.263
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:24:40.008
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x8002800]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:24:41.815
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x8002800 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+!SESSION 2019-03-22 16:32:19.956 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-03-22 16:32:23.641
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:32:52.314
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x3000]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:32:53.978
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x3000 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:33:24.439
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:33:24.792
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x3000]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:33:26.378
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x3000 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+!SESSION 2019-03-22 16:37:17.431 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-03-22 16:37:20.463
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:40:41.709
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x3000]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:40:43.311
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x3000 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:41:02.616
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:41:02.964
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x3000]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:41:04.561
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x3000 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:41:24.739
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:41:25.108
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x3000]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:41:26.848
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x3000 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:41:44.062
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:41:44.414
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --accept-bad-sysid --sidp=0x3000]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-03-22 16:41:46.081
+!MESSAGE Executing: [C:/quartus/18.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --accept-bad-sysid --sidp=0x3000 --reset-target /cygdrive/c/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/nios2/nios2.elf]
+!SESSION 2019-03-23 15:11:31.072 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/quartus/18.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-03-23 15:11:47.555
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 4 567 2019-03-23 15:15:13.096
+!MESSAGE The project description file (.project) for 'MedianFilter' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-03-23 15:17:36.884
+!MESSAGE Indexed 'nios2_bsp' (80 sources, 54 headers) in 1.55 sec: 1,057 declarations; 2,359 references; 109 unresolved inclusions; 4 syntax errors; 188 unresolved names (5.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-03-23 15:17:42.267
+!MESSAGE Indexed 'nios2' (1 sources, 0 headers) in 0.026 sec: 1 declarations; 1 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)

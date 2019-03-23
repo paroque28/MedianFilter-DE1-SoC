@@ -1,7 +1,9 @@
 #include "sys/alt_stdio.h"
 #include <system.h>
 
-volatile const char * onchip_mem = (char *) ONCHIP_MEMORY_BASE;
+volatile char * onchip_mem = (char *) ONCHIP_MEMORY_BASE;
+
+volatile char * base = (char *) 0x00;
 
 int main()
 { 
@@ -14,7 +16,8 @@ int main()
   while (1){
 	  alt_putstr("Onchip mem: ");
 	  alt_putstr(onchip_mem);
-	  usleep(100000);
+	  printf("|------------\nchar: %c\n",*base);
+	  usleep(200000); //one second
   }
 
   return 0;

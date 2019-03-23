@@ -1,21 +1,29 @@
-16:05:20 **** Clean-only build of configuration Debug for project ARM-master ****
-make clean 
-clean   ./alt_generalpurpose_io.o ./hps_linux.o   ./alt_generalpurpose_io.d ./hps_linux.d  ARM-master 
- 
-16:05:24 **** Build of configuration Debug for project ARM-master ****
+16:44:16 **** Incremental Build of configuration Debug for project ARM ****
 make all 
-Building file: ../alt_generalpurpose_io.c
+Building file: ../src/ARM.c
 Invoking: GCC C Compiler 4 [arm-linux-gnueabihf]
-arm-linux-gnueabihf-gcc -Dsoc_cv_av -I"C:\intelFPGA\18.1\embedded\ip\altera\hps\altera_hps\hwlib\include" -I"C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\quartus\software\MedianFilter_bsp" -I"C:\intelFPGA\18.1\embedded\ip\altera\hps\altera_hps\hwlib\include\soc_cv_av" -O0 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"alt_generalpurpose_io.d" -MT"alt_generalpurpose_io.o" -o "alt_generalpurpose_io.o" "../alt_generalpurpose_io.c"
-Finished building: ../alt_generalpurpose_io.c
+arm-linux-gnueabihf-gcc -Dsoc_cv_av -I"C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\nios2_bsp" -I"C:\intelFPGA\18.1\embedded\ip\altera\hps\altera_hps\hwlib\include" -I"C:\intelFPGA\18.1\embedded\ip\altera\hps\altera_hps\hwlib\include\soc_cv_av" -O0 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ARM.d" -MT"src/ARM.o" -o "src/ARM.o" "../src/ARM.c"
+../src/ARM.c: In function 'main':
+../src/ARM.c:42:5: warning: passing argument 1 of 'printf' discards 'volatile' qualifier from pointer target type [enabled by default]
+     printf(onchip_mem);
+     ^
+In file included from ../src/ARM.h:15:0,
+                 from ../src/ARM.c:11:
+c:\intelfpga_pro\18.1\embedded\ds-5\sw\gcc\arm-linux-gnueabihf\libc\usr\include\stdio.h:362:12: note: expected 'const char * __restrict__' but argument is of type 'volatile char *'
+ extern int printf (const char *__restrict __format, ...);
+            ^
+../src/ARM.c:48:2: warning: passing argument 1 of 'munmap' discards 'volatile' qualifier from pointer target type [enabled by default]
+  munmap(onchip_mem, ONCHIP_MEMORY_SPAN);
+  ^
+In file included from ../src/ARM.h:18:0,
+                 from ../src/ARM.c:11:
+c:\intelfpga_pro\18.1\embedded\ds-5\sw\gcc\arm-linux-gnueabihf\libc\usr\include\sys\mman.h:76:12: note: expected 'void *' but argument is of type 'volatile char *'
+ extern int munmap (void *__addr, size_t __len) __THROW;
+            ^
+Finished building: ../src/ARM.c
  
-Building file: ../hps_linux.c
-Invoking: GCC C Compiler 4 [arm-linux-gnueabihf]
-arm-linux-gnueabihf-gcc -Dsoc_cv_av -I"C:\intelFPGA\18.1\embedded\ip\altera\hps\altera_hps\hwlib\include" -I"C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\quartus\software\MedianFilter_bsp" -I"C:\intelFPGA\18.1\embedded\ip\altera\hps\altera_hps\hwlib\include\soc_cv_av" -O0 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"hps_linux.d" -MT"hps_linux.o" -o "hps_linux.o" "../hps_linux.c"
-Finished building: ../hps_linux.c
- 
-Building target: ARM-master
+Building target: ARM
 Invoking: GCC C Linker 4 [arm-linux-gnueabihf]
-arm-linux-gnueabihf-gcc  -o "ARM-master"  ./alt_generalpurpose_io.o ./hps_linux.o   
-Finished building target: ARM-master
+arm-linux-gnueabihf-gcc  -o "ARM"  ./src/ARM.o   
+Finished building target: ARM
  
