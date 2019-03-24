@@ -10,7 +10,7 @@ typedef unsigned char PixelNIOS;
 typedef struct {
   unsigned int width;
   unsigned int height;
-  PixelNIOS * Rows;
+  PixelNIOS * pixels;
 } ImageNIOS;
 
 

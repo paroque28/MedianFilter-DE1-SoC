@@ -64,6 +64,9 @@ int main(int argc, char *argv[]) {
     abort();
   }
 
+  void * sdram_simulation = malloc((sizeof(int)*2)+(sizeof(char)* 20000000 ));
+  int * leds_simulation = malloc(sizeof(int));
+
 
   // Get Image properties
   float percentage = atof(argv[2])/100.0f;
@@ -88,14 +91,17 @@ int main(int argc, char *argv[]) {
   Image timg_4 = png_to_Image(img_4);
   ImageNIOS image_to_nios = convertImageToImageNIOS(timg_4);
   //SEND TO NIOS
-  void * sdram_simulation = malloc((sizeof(int)*2)+(sizeof(char)* timg_4.size.width * timg_4.size.height ));
-  sendToSDRAM(sdram_simulation, image_to_nios);
-    //ON NIOS
-    Image fromARM = convertNIOSImageToImage(image_to_nios);
-    Image filtered_img_arm = medianFilter5x5(fromARM);
-    ImageNIOS toARM = convertImageToImageNIOS(filtered_img_arm);
-    //ON NIOS_EXIT
-  ImageNIOS imagenios_from_nios = receiveFromSDRAM(sdram_simulation); 
+  sendToSDRAM(sdram_simulation, leds_simulation, IMAGE_SENT_TO_NIOS, image_to_nios);
+        //ON NIOS
+        while (*leds_simulation != IMAGE_SENT_TO_NIOS);
+        ImageNIOS fromARM = receiveFromSDRAM(sdram_simulation,leds_simulation,IMAGE_RECEIVED_ON_NIOS);
+        Image fromARMconv = convertNIOSImageToImage(image_to_nios);
+        Image filtered_img_arm = medianFilter5x5(fromARMconv);
+        ImageNIOS toARM = convertImageToImageNIOS(filtered_img_arm);
+        sendToSDRAM (sdram_simulation, leds_simulation, IMAGE_SENT_TO_ARM, toARM);
+        //ON NIOS_EXIT
+  while (*leds_simulation != IMAGE_SENT_TO_ARM);
+  ImageNIOS imagenios_from_nios = receiveFromSDRAM(sdram_simulation, leds_simulation, IMAGE_RECEIVED_ON_ARM); 
   Image image_from_nios = convertNIOSImageToImage(imagenios_from_nios); 
   PNGImage png_filtered_img_4 = Image_to_png(image_from_nios);
   

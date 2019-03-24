@@ -70,7 +70,7 @@ Image convertNIOSImageToImage (ImageNIOS img){
     }
 
     for(int y = 0; y < img.height; y++) {
-        memcpy(rows[y],(img.Rows + ( y * img.width )), img.width);
+        memcpy(rows[y],(img.pixels + ( y * img.width )), img.width);
     }
 
 
