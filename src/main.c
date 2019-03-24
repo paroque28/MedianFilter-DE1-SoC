@@ -1,10 +1,13 @@
 #include "image.h"
+#include "imagepng.h"
+#include "imagenios.h"
 #include "utils/split.h"
 #include "utils/glue.h"
 #include "utils/convert.h"
 #include "utils/print.h"
 #include "utils/io.h"
 #include "utils/filter.h"
+#include "utils/nios_comm.h"
 #include "math.h"
 
 
@@ -82,14 +85,25 @@ int main(int argc, char *argv[]) {
   
 
   // FILTER NIOS IMAGE
-
-  // Image timg_4 = png_to_Image(img_4);
-  // Image filtered_img_4 = medianFilter5x5(timg_4);
-  // PNGImage png_filtered_img_4 = Image_to_png(filtered_img_4);
+  Image timg_4 = png_to_Image(img_4);
+  ImageNIOS image_to_nios = convertImageToImageNIOS(timg_4);
+  //SEND TO NIOS
+  void * sdram_simulation = malloc((sizeof(int)*2)+(sizeof(char)* timg_4.size.width * timg_4.size.height ));
+  sendToSDRAM(sdram_simulation, image_to_nios);
+    //ON NIOS
+    Image fromARM = convertNIOSImageToImage(image_to_nios);
+    Image filtered_img_arm = medianFilter5x5(fromARM);
+    ImageNIOS toARM = convertImageToImageNIOS(filtered_img_arm);
+    //ON NIOS_EXIT
+  ImageNIOS imagenios_from_nios = receiveFromSDRAM(sdram_simulation); 
+  Image image_from_nios = convertNIOSImageToImage(imagenios_from_nios); 
+  PNGImage png_filtered_img_4 = Image_to_png(image_from_nios);
   
+ // FILTER NIOS IMAGE END
+
 
   // JOIN IMAGES
-  PNGImage result = glue_image(png_filtered_img_1,png_filtered_img_2,png_filtered_img_3,img_4);
+  PNGImage result = glue_image(png_filtered_img_1,png_filtered_img_2,png_filtered_img_3,png_filtered_img_4);
 
   Image img_one = png_to_Image(img_1);
   Image img_one_clone = clone(img_one);

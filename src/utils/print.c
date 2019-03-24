@@ -1,6 +1,5 @@
 #include "print.h"
 
-
 void print_image_png(PNGImage image) {
   ImgSize props= image.size;
   png_bytep *row_pointers = image.Rows;

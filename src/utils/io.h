@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <png.h>
 #include <string.h>
-#include "../image.h"
+#include "../imagepng.h"
 
 png_props get_png_props(char *filename);
 png_bytep * read_png_file(char *filename);
