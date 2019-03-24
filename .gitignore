@@ -109,5 +109,8 @@ PLLJ_PLLSPE_INFO.txt # The generated PLL specification file
 
 .metadata
 debugger
+
 main
 split
+
+ARM/lib/
