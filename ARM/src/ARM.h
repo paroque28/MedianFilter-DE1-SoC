@@ -28,5 +28,6 @@
 
 #include "system.h"
 
+#define ALT_HPS2FPGASLVS_OFST 0xC0000000
 
 #endif /* ARM_H_ */

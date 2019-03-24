@@ -10,12 +10,15 @@
  */
 #include "ARM.h"
 
+
+
 //#define LED_PIO_SPAN            0x10
 
 int main(void)
 {
 
 	volatile char *onchip_mem;
+	volatile unsigned int *leds;
 	int fd;
 	int i;
 
@@ -23,6 +26,7 @@ int main(void)
 	puts("Median Filter!!!!"); /* prints Median Filter */
 	printf("Altera LightWeight offset: %X\n", ALT_LWFPGASLVS_OFST);
 	printf("On Chip Memory offset: %X\n", ONCHIP_MEMORY_BASE);
+	printf("LEDS offset: %X\n", LEDS_BASE);
 	printf("On Chip Memory SPAN: %X\n", ONCHIP_MEMORY_SPAN);
 	printf("On Chip Memory offset+base: %X\n", (ALT_LWFPGASLVS_OFST + ONCHIP_MEMORY_BASE));
 
@@ -30,9 +34,9 @@ int main(void)
 
 
 	//Map onchip_mem Physical Address to Virtual Address Space
-	onchip_mem = mmap( NULL, ONCHIP_MEMORY_SPAN, ( PROT_READ | PROT_WRITE ), MAP_SHARED, fd, (ALT_LWFPGASLVS_OFST + ONCHIP_MEMORY_BASE) );
+	onchip_mem = mmap( NULL, ONCHIP_MEMORY_SPAN, ( PROT_READ | PROT_WRITE ), MAP_SHARED, fd, (ALT_HPS2FPGASLVS_OFST + ONCHIP_MEMORY_BASE) );
 
-	printf("First------------\nchar: %c\n",*onchip_mem);
+	printf(onchip_mem);
 	for (i=0; i < 12; i++)
 	{
 	   *(onchip_mem+i) = 'a';
@@ -43,9 +47,14 @@ int main(void)
 	   printf("\n");
 	}
 
+	leds =  mmap( NULL, LEDS_SPAN, ( PROT_READ | PROT_WRITE ), MAP_SHARED, fd, (ALT_HPS2FPGASLVS_OFST + LEDS_BASE) );
+
+	*leds = 0xFF;
+
 
 	//Unmap
 	munmap(onchip_mem, ONCHIP_MEMORY_SPAN);
+	munmap(leds, LEDS_SPAN);
 
 	close(fd);
 	return(0);
