@@ -28,13 +28,6 @@
 
 #include "system.h"
 
-#include "image.h"
-#include "utils/split.h"
-#include "utils/convert.h"
-#include "utils/print.h"
-#include "utils/io.h"
-#include "utils/filter.h"
-#include "utils/demoImage.h"
 
 #define ALT_HPS2FPGASLVS_OFST 0xC0000000
 
