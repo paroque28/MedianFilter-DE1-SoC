@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Mar 23, 2019 3:17:33 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1553375853013</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Mar 23, 2019 4:23:00 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1553379780964</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\nios2_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
+        <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\quartus\nios2hps.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>nios2</Cpu>

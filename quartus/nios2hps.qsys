@@ -799,7 +799,7 @@
   <parameter name="dataAddrWidth" value="27" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='leds.s1' start='0x2000' end='0x2010' type='altera_avalon_pio.s1' /><slave name='sysid.control_slave' start='0x3000' end='0x3008' type='altera_avalon_sysid_qsys.control_slave' /><slave name='jtag_uart.avalon_jtag_slave' start='0x4000' end='0x4008' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='sdram_controller.s1' start='0x4000000' end='0x8000000' type='altera_avalon_new_sdram_controller.s1' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory.s1' start='0x0' end='0x2000' type='altera_avalon_onchip_memory2.s1' /><slave name='leds.s1' start='0x2000' end='0x2010' type='altera_avalon_pio.s1' /><slave name='sysid.control_slave' start='0x3000' end='0x3008' type='altera_avalon_sysid_qsys.control_slave' /><slave name='jtag_uart.avalon_jtag_slave' start='0x4000' end='0x4008' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='nios2.debug_mem_slave' start='0x5000' end='0x5800' type='altera_nios2_gen2.debug_mem_slave' /><slave name='sdram_controller.s1' start='0x4000000' end='0x8000000' type='altera_avalon_new_sdram_controller.s1' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -845,7 +845,7 @@
   <parameter name="instruction_master_high_performance_paddr_size" value="0" />
   <parameter name="instruction_master_paddr_base" value="0" />
   <parameter name="instruction_master_paddr_size" value="0" />
-  <parameter name="internalIrqMaskSystemInfo" value="0" />
+  <parameter name="internalIrqMaskSystemInfo" value="1" />
   <parameter name="io_regionbase" value="0" />
   <parameter name="io_regionsize" value="0" />
   <parameter name="master_addr_map" value="false" />
@@ -1250,6 +1250,15 @@
    kind="avalon"
    version="18.0"
    start="nios2.data_master"
+   end="nios2.debug_mem_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x5000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.0"
+   start="nios2.data_master"
    end="sdram_controller.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x04000000" />
@@ -1258,6 +1267,15 @@
  <connection kind="avalon" version="18.0" start="nios2.data_master" end="leds.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x2000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.0"
+   start="nios2.data_master"
+   end="onchip_memory.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1321,6 +1339,9 @@
    version="18.0"
    start="pll.outclk1"
    end="hps.h2f_lw_axi_clock" />
+ <connection kind="interrupt" version="18.0" start="nios2.irq" end="jtag_uart.irq">
+  <parameter name="irqNumber" value="0" />
+ </connection>
  <connection kind="reset" version="18.0" start="clk.clk_reset" end="pll.reset" />
  <connection
    kind="reset"
@@ -1360,6 +1381,11 @@
    version="18.0"
    start="nios2.debug_reset_request"
    end="sysid.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="nios2.debug_reset_request"
+   end="leds.reset" />
  <connection
    kind="reset"
    version="18.0"

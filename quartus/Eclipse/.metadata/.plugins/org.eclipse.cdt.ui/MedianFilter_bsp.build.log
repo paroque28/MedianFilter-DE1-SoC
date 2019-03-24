@@ -1,6 +1,0 @@
-16:56:02 **** Clean-only build of configuration Nios II for project MedianFilter_bsp ****
-make clean 
-[BSP clean complete]
-
-16:56:04 Build Finished (took 1s.496ms)
-
