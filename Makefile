@@ -4,4 +4,4 @@ DEPS= $(wildcard src/*.c) $(wildcard src/utils/*.c)
 HEADERS=
 
 median_filter: $(DEPS) $(HEADERS)
-	$(CC) -o $@ src/main.c  $(DEPS) $(CFLAGS)
+	$(CC) -o $@ $(DEPS) $(CFLAGS)
