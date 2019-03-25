@@ -3,10 +3,9 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include <png.h>
 #include <string.h>
-#include "../imagepng.h"
+#include "../image.h"
 
-PNGImage glue_image(PNGImage img1, PNGImage img2, PNGImage img3, PNGImage img4);
+Image glue_image(Image img1, Image img2, Image img3, Image img4);
 
 #endif

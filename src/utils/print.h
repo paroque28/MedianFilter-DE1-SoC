@@ -2,8 +2,9 @@
 #define PRINT_H
 
 #include "../image.h"
-#include "../imagepng.h"
-void print_image_png(PNGImage);
+#include <stdio.h>
+// #include "../imagepng.h"
+// void print_image_png(PNGImage);
 void print_image(Image image);
 
 #endif

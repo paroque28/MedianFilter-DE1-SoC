@@ -3,7 +3,6 @@
 
 #include "../image.h"
 #include "print.h"
-#include "io.h"
 
 
 Image black_and_white (Image image);

@@ -82,29 +82,3 @@ Image convertNIOSImageToImage (ImageNIOS img){
     return result;
 }
 
-
-// PGMImage Image_to_pgm (Image image){
-//     ImgSize props= image.size;
-//     Pixelp * row_pointers = image.Rows;
-//     //Reserve memory
-//     RGB_INT * res_rows = (png_bytep*) malloc(sizeof(png_bytep) * props.height);
-//     for(int y = 0; y < props.height; y++) {
-//       res_rows[y] = (png_byte *)malloc(sizeof(png_byte) * props.width*4);
-//     }
-
-//     ImgSize res_size= {0,0,props.width,props.height};
-//     PNGImage result = {res_rows, res_size};
-
-//     for(int y = 0; y < props.height; y++) {
-//     Pixel * row = row_pointers[y];
-//     png_bytep res_row = res_rows[y];
-//     for(int x = 0; x < props.width; x++) {
-//       png_bytep px = &(res_row[x*4]);
-//       px[0] = row[x];
-//       px[1] = row[x];
-//       px[2] = row[x];
-//     }
-//   }
-//   return result;
-// }
-

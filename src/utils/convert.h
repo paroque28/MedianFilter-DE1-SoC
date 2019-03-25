@@ -3,7 +3,7 @@
 
 #include "../image.h"
 // #include "../imagepng.h"
-#include "pmg.h"
+#include "pgm.h"
 #include "../imagenios.h"
 #include <stdlib.h>
 #include <stdio.h>

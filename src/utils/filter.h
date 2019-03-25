@@ -3,7 +3,6 @@
 
 #include "../image.h"
 #include "print.h"
-#include "io.h"
 
 void swap (int *xp, int *yp);
 void printArray (int array[], int size);
