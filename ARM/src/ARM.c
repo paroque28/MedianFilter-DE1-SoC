@@ -16,21 +16,24 @@
 
 int main(int argc, char *argv[])
 {
-	if(argc != 2){ // argv[1]: image file , argv[2]: percentage
-	    printf("Not enough arguments!!\n");
-	    abort();
-	  }
+	
+	printf("HOLAAAAAAAAAAAAA\n");
+	
 
-	volatile char *sdram;
-	volatile unsigned int *leds;
+	char *sdram;
+	unsigned int *leds;
 	int fd;
 	int i;
 
 	fd = open("/dev/mem", (O_RDWR | O_SYNC));
 
+	printf("HOLAAAAAAAAAAAAA\n");
+
 
 	//Map onchip_mem Physical Address to Virtual Address Space
 	sdram = mmap( NULL, SDRAM_CONTROLLER_SPAN, ( PROT_READ | PROT_WRITE ), MAP_SHARED, fd, (ALT_HPS2FPGASLVS_OFST + SDRAM_CONTROLLER_BASE + 0x2000) );
+
+	printf("HOLAAAAAAAAAAAAA\n");
 
 	printf(sdram);
 	for (i=0; i < 12; i++)
@@ -42,6 +45,8 @@ int main(int argc, char *argv[])
 	   printf(sdram);
 	   printf("\n");
 	}
+
+	printf("HOLAAAAAAAAAAAAA\n");
 
 
 
@@ -55,5 +60,5 @@ int main(int argc, char *argv[])
 	munmap(leds, LEDS_SPAN);
 
 	close(fd);
-	return(0);
+	return 0;
 }
