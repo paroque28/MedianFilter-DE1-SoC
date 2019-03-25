@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS= -Isrc -lpng -g -ggdb
+CFLAGS= -Isrc -lpng -g -ggdb -Ilib
 DEPS= $(wildcard src/*.c) $(wildcard src/utils/*.c)
 HEADERS=
 

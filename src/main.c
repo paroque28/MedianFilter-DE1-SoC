@@ -9,6 +9,7 @@
 #include "utils/filter.h"
 #include "utils/nios_comm.h"
 #include "math.h"
+#include "pgm.h"
 
 
 
