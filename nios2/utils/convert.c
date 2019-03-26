@@ -1,4 +1,4 @@
-#include "convert_nios.h"
+#include "convert.h"
 
 ImageNIOS convertImageToImageNIOS (Image img){
     PixelNIOS * pixels = malloc(sizeof (PixelNIOS) * img.size.width * img.size.height);

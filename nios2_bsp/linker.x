@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios2hps'
  * SOPC Builder design path: C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/quartus/nios2hps.sopcinfo
  *
- * Generated: Sat Mar 23 15:17:34 CST 2019
+ * Generated: Tue Mar 26 15:09:27 CST 2019
  */
 
 /*
@@ -51,7 +51,7 @@
 MEMORY
 {
     reset : ORIGIN = 0x0, LENGTH = 32
-    onchip_memory : ORIGIN = 0x20, LENGTH = 8160
+    onchip_memory : ORIGIN = 0x20, LENGTH = 16352
     sdram_controller : ORIGIN = 0x4000000, LENGTH = 67108864
 }
 

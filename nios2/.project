@@ -37,4 +37,11 @@
 		<nature>com.altera.sbtgui.project.SBTGUIAppNature</nature>
 		<nature>com.altera.sbtgui.project.SBTGUIManagedNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src</name>
+			<type>2</type>
+			<location>C:/Users/prodrigu/git/arqui2/MedianFilter-DE1-SoC/src</location>
+		</link>
+	</linkedResources>
 </projectDescription>

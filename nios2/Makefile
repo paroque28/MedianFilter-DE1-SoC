@@ -142,7 +142,12 @@ ACDS_VERSION := 18.0
 ELF := nios2.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS := main.c
+C_SRCS += main.c
+C_SRCS += image.c
+C_SRCS += imagenios.c
+C_SRCS += utils/convert.c
+C_SRCS += utils/filter.c
+C_SRCS += utils/nios_comm.c
 CXX_SRCS :=
 ASM_SRCS :=
 

@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Mar 23, 2019 4:23:00 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1553379780964</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Mar 26, 2019 3:09:26 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1553634566056</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\nios2_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\prodrigu\git\arqui2\MedianFilter-DE1-SoC\quartus\nios2hps.sopcinfo</SopcDesignFile>
@@ -900,27 +900,27 @@
         </Setting>
         <MemoryMap>
                 <slaveDescriptor>onchip_memory</slaveDescriptor>
-                <addressRange>0x00000000 - 0x00001FFF</addressRange>
-                <addressSpan>8192</addressSpan>
+                <addressRange>0x00000000 - 0x00003FFF</addressRange>
+                <addressSpan>16384</addressSpan>
                 <attributes>memory</attributes>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>leds</slaveDescriptor>
-                <addressRange>0x00002000 - 0x0000200F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>sysid</slaveDescriptor>
-                <addressRange>0x00003000 - 0x00003007</addressRange>
-                <addressSpan>8</addressSpan>
-                <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
                 <addressRange>0x00004000 - 0x00004007</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>leds</slaveDescriptor>
+                <addressRange>0x00006000 - 0x0000600F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sysid</slaveDescriptor>
+                <addressRange>0x00007000 - 0x00007007</addressRange>
+                <addressSpan>8</addressSpan>
+                <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sdram_controller</slaveDescriptor>
