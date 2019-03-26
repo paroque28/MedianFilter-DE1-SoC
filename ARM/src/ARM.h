@@ -19,7 +19,7 @@
 #include <unistd.h>
 #include <stdbool.h>
 #include <stdint.h>
-//#include <png.h>
+
 
 #include "socal/hps.h"
 #include "hwlib.h"

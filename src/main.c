@@ -1,5 +1,4 @@
 #include "image.h"
-// #include "imagepng.h"
 #include "imagenios.h"
 #include "utils/split.h"
 #include "utils/glue.h"
@@ -9,13 +8,69 @@
 #include "utils/nios_comm.h"
 #include "math.h"
 #include "utils/pgm.h"
+#include "socal/hps.h"
+#include "hwlib.h"
+#include "socal/alt_gpio.h"
+#include "socal/hps.h"
+#include "socal/socal.h"
+
+#include "system.h"
+
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/mman.h>
+#include <unistd.h>
+#include <stdbool.h>
+#include <stdint.h>
 
 
+#define ALT_HPS2FPGASLVS_OFST 0xC0000000
 
 Image img_1;
 Image img_2;
 Image img_3;
 Image img_4;
+
+char *sdram;
+unsigned int *leds;
+
+void setup_SDRAM(){
+  
+	int fd;
+	int i;
+
+	fd = open("/dev/mem", (O_RDWR | O_SYNC));
+
+  sdram = mmap( NULL, SDRAM_CONTROLLER_SPAN, ( PROT_READ | PROT_WRITE ), MAP_SHARED, fd, (ALT_HPS2FPGASLVS_OFST + SDRAM_CONTROLLER_BASE + 0x2000) );
+
+  for (i=0; i < 12; i++)
+	{
+	   *(sdram+i) = 'a';
+	   *(sdram+i+1) = '\0';
+	   usleep(1000*1000);
+	   printf("------------\nchar: %c\n",*sdram);
+	   printf(sdram);
+	   printf("\n");
+	}
+
+  leds =  mmap( NULL, LEDS_SPAN, ( PROT_READ | PROT_WRITE ), MAP_SHARED, fd, (ALT_LWFPGASLVS_OFST + LEDS_BASE) );
+
+	*leds = 0xAA;
+
+
+	//Unmap
+	munmap(sdram, SDRAM_CONTROLLER_SPAN);
+	munmap(leds, LEDS_SPAN);
+
+	close(fd);
+
+
+}
 
 int config_images(char * file, float percentage){
 
@@ -62,12 +117,14 @@ int main(int argc, char *argv[]) {
     abort();
   }
 
-  void * sdram_simulation = malloc((sizeof(int)*2)+(sizeof(char)* 20000000 ));
-  int * leds_simulation = malloc(sizeof(int));
+  *leds = IMAGE_RESET;
+
+  // void * sdram_simulation = malloc((sizeof(int)*2)+(sizeof(char)* 20000000 ));
+  // int * leds_simulation = malloc(sizeof(int));
 
 
   // Get Image properties
-  float percentage = atof(argv[2])/100.0f;
+  float percentage = atoi(argv[2])/100.0f;
   config_images(argv[1], percentage);
 
   // FILTER ARM IMAGES
@@ -79,17 +136,17 @@ int main(int argc, char *argv[]) {
   // FILTER NIOS IMAGE
   ImageNIOS image_to_nios = convertImageToImageNIOS(img_4);
   //SEND TO NIOS
-  sendToSDRAM(sdram_simulation, leds_simulation, IMAGE_SENT_TO_NIOS, image_to_nios);
+  sendToSDRAM(sdram, leds , IMAGE_SENT_TO_NIOS, image_to_nios);
         //ON NIOS
-        while (*leds_simulation != IMAGE_SENT_TO_NIOS);
-        ImageNIOS fromARM = receiveFromSDRAM(sdram_simulation,leds_simulation,IMAGE_RECEIVED_ON_NIOS);
-        Image fromARMconv = convertNIOSImageToImage(image_to_nios);
-        Image filtered_img_arm = medianFilter5x5(fromARMconv);
-        ImageNIOS toARM = convertImageToImageNIOS(filtered_img_arm);
-        sendToSDRAM (sdram_simulation, leds_simulation, IMAGE_SENT_TO_ARM, toARM);
+        // while (*leds_simulation != IMAGE_SENT_TO_NIOS);
+        // ImageNIOS fromARM = receiveFromSDRAM(sdram_simulation,leds_simulation,IMAGE_RECEIVED_ON_NIOS);
+        // Image fromARMconv = convertNIOSImageToImage(image_to_nios);
+        // Image filtered_img_arm = medianFilter5x5(fromARMconv);
+        // ImageNIOS toARM = convertImageToImageNIOS(filtered_img_arm);
+        // sendToSDRAM (sdram_simulation, leds_simulation, IMAGE_SENT_TO_ARM, toARM);
         //ON NIOS_EXIT
-  while (*leds_simulation != IMAGE_SENT_TO_ARM);
-  ImageNIOS imagenios_from_nios = receiveFromSDRAM(sdram_simulation, leds_simulation, IMAGE_RECEIVED_ON_ARM); 
+  while (*leds != IMAGE_SENT_TO_ARM);
+  ImageNIOS imagenios_from_nios = receiveFromSDRAM(sdram, leds, IMAGE_RECEIVED_ON_ARM); 
   Image filtered_img_4 = convertNIOSImageToImage(imagenios_from_nios); 
  // FILTER NIOS IMAGE END
 

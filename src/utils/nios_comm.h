@@ -9,6 +9,7 @@
 #define IMAGE_SENT_TO_ARM 0xFF
 #define IMAGE_RECEIVED_ON_NIOS 0xAA
 #define IMAGE_RECEIVED_ON_ARM 0xCC
+#define IMAGE_RESET 0x00
 
 void sendToSDRAM(void* sdram, int* leds, int signal, ImageNIOS image);
 
