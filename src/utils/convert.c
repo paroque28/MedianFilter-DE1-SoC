@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-#include "convert_nios.h"
-=======
 #include "convert.h"
 
 
@@ -56,7 +53,6 @@
 // }
 
 
->>>>>>> e1587680db274f50bac8c66c887053779dc501fd
 
 ImageNIOS convertImageToImageNIOS (Image img){
     PixelNIOS * pixels = malloc(sizeof (PixelNIOS) * img.size.width * img.size.height);
@@ -85,7 +81,4 @@ Image convertNIOSImageToImage (ImageNIOS img){
     Image result = { rows, size };
     return result;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> e1587680db274f50bac8c66c887053779dc501fd

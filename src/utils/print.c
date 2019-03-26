@@ -1,7 +1,5 @@
 #include "print.h"
 
-<<<<<<< HEAD
-=======
 // void print_image_png(PNGImage image) {
 //   ImgSize props= image.size;
 //   png_bytep *row_pointers = image.Rows;
@@ -15,7 +13,6 @@
 //   }
 // }
 
->>>>>>> e1587680db274f50bac8c66c887053779dc501fd
 //Example Print
 void print_image(Image image) {
   for(int y = 0; y < image.size.height; y++) {
