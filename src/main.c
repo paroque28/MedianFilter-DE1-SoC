@@ -39,35 +39,25 @@ Image img_4;
 char *sdram;
 unsigned int *leds;
 
+int fd;
+
 void setup_SDRAM(){
   
-	int fd;
-	int i;
+	
+	
 
 	fd = open("/dev/mem", (O_RDWR | O_SYNC));
 
   sdram = mmap( NULL, SDRAM_CONTROLLER_SPAN, ( PROT_READ | PROT_WRITE ), MAP_SHARED, fd, (ALT_HPS2FPGASLVS_OFST + SDRAM_CONTROLLER_BASE + 0x2000) );
 
-  for (i=0; i < 12; i++)
-	{
-	   *(sdram+i) = 'a';
-	   *(sdram+i+1) = '\0';
-	   usleep(1000*1000);
-	   printf("------------\nchar: %c\n",*sdram);
-	   printf(sdram);
-	   printf("\n");
-	}
+  
 
   leds =  mmap( NULL, LEDS_SPAN, ( PROT_READ | PROT_WRITE ), MAP_SHARED, fd, (ALT_LWFPGASLVS_OFST + LEDS_BASE) );
 
-	*leds = 0xAA;
+	*leds = 0x00;
 
 
-	//Unmap
-	munmap(sdram, SDRAM_CONTROLLER_SPAN);
-	munmap(leds, LEDS_SPAN);
-
-	close(fd);
+	
 
 
 }
@@ -117,7 +107,8 @@ int main(int argc, char *argv[]) {
     abort();
   }
 
-  *leds = IMAGE_RESET;
+  setup_SDRAM();
+  //*leds = IMAGE_RESET;
 
   // void * sdram_simulation = malloc((sizeof(int)*2)+(sizeof(char)* 20000000 ));
   // int * leds_simulation = malloc(sizeof(int));
@@ -145,7 +136,12 @@ int main(int argc, char *argv[]) {
         // ImageNIOS toARM = convertImageToImageNIOS(filtered_img_arm);
         // sendToSDRAM (sdram_simulation, leds_simulation, IMAGE_SENT_TO_ARM, toARM);
         //ON NIOS_EXIT
-  while (*leds != IMAGE_SENT_TO_ARM);
+  while (*leds != IMAGE_SENT_TO_ARM);//{
+    //printf("%X",*leds);
+  //}
+  
+  //printf("HEXA %X",*leds);
+
   ImageNIOS imagenios_from_nios = receiveFromSDRAM(sdram, leds, IMAGE_RECEIVED_ON_ARM); 
   Image filtered_img_4 = convertNIOSImageToImage(imagenios_from_nios); 
  // FILTER NIOS IMAGE END
@@ -159,6 +155,13 @@ int main(int argc, char *argv[]) {
   save(img_2,"img_2.pgm");
   save(img_3,"img_3.pgm");
   save(img_4,"img_4.pgm");
+
+  //Unmap
+	munmap(sdram, SDRAM_CONTROLLER_SPAN);
+  
+	munmap(leds, LEDS_SPAN);
+
+	close(fd);
 
   return 0;
 }
