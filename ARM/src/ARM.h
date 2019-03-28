@@ -19,6 +19,7 @@
 #include <unistd.h>
 #include <stdbool.h>
 #include <stdint.h>
+#include <time.h> 
 
 
 #include "socal/hps.h"
