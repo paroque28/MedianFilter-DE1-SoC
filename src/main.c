@@ -27,7 +27,7 @@
 #include <unistd.h>
 #include <stdbool.h>
 #include <stdint.h>
-
+#include <time.h> 
 
 #define ALT_HPS2FPGASLVS_OFST 0xC0000000
 
@@ -123,11 +123,12 @@ int main(int argc, char *argv[]) {
   Image filtered_img_2 = medianFilter5x5(img_2);
   Image filtered_img_3 = medianFilter5x5(img_3);
   
-
+  clock_t t; 
   // FILTER NIOS IMAGE
   ImageNIOS image_to_nios = convertImageToImageNIOS(img_4);
   //SEND TO NIOS
   sendToSDRAM(sdram, leds , IMAGE_SENT_TO_NIOS, image_to_nios);
+  t = clock(); 
         //ON NIOS
         // while (*leds_simulation != IMAGE_SENT_TO_NIOS);
         // ImageNIOS fromARM = receiveFromSDRAM(sdram_simulation,leds_simulation,IMAGE_RECEIVED_ON_NIOS);
@@ -136,11 +137,10 @@ int main(int argc, char *argv[]) {
         // ImageNIOS toARM = convertImageToImageNIOS(filtered_img_arm);
         // sendToSDRAM (sdram_simulation, leds_simulation, IMAGE_SENT_TO_ARM, toARM);
         //ON NIOS_EXIT
-  while (*leds != IMAGE_SENT_TO_ARM);//{
-    //printf("%X",*leds);
-  //}
-  
-  //printf("HEXA %X",*leds);
+  while (*leds != IMAGE_SENT_TO_ARM);
+  t = clock() - t; 
+  double time_taken = ((double)t)/ (CLOCKS_PER_SEC * 1000); // in miliseconds
+  printf("NIOS FILTER took %f miliseconds to execute \n", time_taken);
 
   ImageNIOS imagenios_from_nios = receiveFromSDRAM(sdram, leds, IMAGE_RECEIVED_ON_ARM); 
   Image filtered_img_4 = convertNIOSImageToImage(imagenios_from_nios); 
